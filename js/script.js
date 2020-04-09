@@ -1,6 +1,13 @@
 // VARIABLES
 
 stateName1 = document.getElementById("state-name-1");
+stateTotalCount1 = document.getElementById("state-total-1");
+stateRecoveredCount1 = document.getElementById("state-recovered-1");
+stateDeathCount1 = document.getElementById("state-death-1");
+stateNewCases1 = document.getElementById("new-death-1");
+stateNewDeaths1 = document.getElementById("new-cases-1");
+stateRecordDate1 = document.getElementById("state-record-date-1");
+
 
 
 // -----------------------------------------
@@ -45,21 +52,25 @@ stateName1 = document.getElementById("state-name-1");
     // New York ------------------------------
 
     // New York overall info
-    console.log(data[1]);
+    
     // New York state name
     stateName1.textContent = data[1].state_name;
-    console.log(data[1].state_name);
-    // New York total cases
     
-    console.log(data[1].total_cases);
+    // New York total cases
+    stateTotalCount1.textContent = data[1].total_cases;
+    
     // New York new cases
-    console.log(data[1].new_cases);
+    // stateNewCases1.textContent = data[1].new_cases;
+    
     // New York new deaths
-    console.log(data[1].new_deaths);
+    // stateNewDeaths1.textContent = data[1].new_deaths;
+    
     // New York active cases
-    console.log(data[1].active_cases);
+    stateDeathCount1.textContent = data[1].total_deaths;
+    
     // New York last date record
-    console.log(data[1].record_date);
+    stateRecordDate1.textContent = data[1].record_date.substr(5, 5).replace("-","/") + "/2020";
+    
 
 
     // New Jersey ------------------------------
