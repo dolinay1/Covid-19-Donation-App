@@ -1541,5 +1541,72 @@ stateRecordDate50 = document.getElementById("state-record-date-50");
   .catch(err => {
   console.log(err);
   });
+
+  window.onload = () => {
+    const submitButton = document.querySelector("#submitBtn")
+    submitButton.addEventListener("click", submit)
+  }
+  
+  function submit(event) {
+    event.preventDefault();
+  
+    const searchTerm = document.querySelector("#inputSearchedTerm");
+    const results = document.querySelector("#results");
+  
+    const url ="https://api.data.charitynavigator.org/v2/organizations?app_id=f9ce292a&app_key=f0df724ada7935a5f444907c85fad917"
+        + "&zip=" + searchTerm.value;
+  
+    fetch(url)
+    .then (response=> response.json())
+    .then (data => {
+      console.log(data)
+  
+      // KEYWORDS TO NARROW DOWN THE SEARCH
+  
+        var keywords = ["Health", "Community"]
+  var debug =false;
+        
+  
+        for (let i=0; i < data.length; i++) {
+            const charity = data[i]
+            const name = charity.charityName;
+            let website = charity.websiteURL;
+            let type = charity.irsClassification.nteeType;
+          
+              for (let j=0; j<keywords.length; j++) {
+                  keyword= keywords[j];
+                      if (name.indexOf(keyword)!== -1 || debug===true) {
+                         
+                          const address = charity.mailingAddress.streetAddress1 + "&nbsp" + charity.mailingAddress.city + "&nbsp" + charity.mailingAddress.postalCode;
+                          
+  
+                          if(!website) {
+                              website=""
+                          }
+                          if(!type) {
+                              type=""
+                          }
+                      
+                  
+  
+                          const card = document.createElement("div");
+                          card.className = "callout"
+                          card.innerHTML = `
+                              <h6>${name}</h6>
+                              <h7>${type}</h7>
+                              ${website ? `<h7>${website}</h7>` : ''}
+                              <h7>${address}</h7>
+                          `
+                          results.append(card);  
+                          break;
+                      } 
+              }
+            
+       
+           
+        
+        }
+    })
+  }
 // }
 
