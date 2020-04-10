@@ -1558,72 +1558,55 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
   .catch(err => {
     console.log(err);
   });
+// _______________________________________
+  // CHARITY SEARCH BY CITY OR ZIP
 
-window.onload = () => {
-  const submitButton = document.querySelector("#submitBtn")
-  submitButton.addEventListener("click", submit)
-}
-
+window.onload = () => { const submitButton = document.querySelector("#submitBtn") 
+submitButton.addEventListener("click", submit) }
 function submit(event) {
   event.preventDefault();
+  const searchTerm = document.querySelector("#inputSearchedTerm"); 
+  let results = document.querySelector("#results"); 
+  results.innerHTML = ""; 
+  let searchparams = ""; 
+  const numbers = "1234567890";
+  
+  // checking to see if the search term is city 
+  if (numbers.indexOf(searchTerm.value[0]) === -1) { searchparams = "&city=" + searchTerm.value; } 
+  else { searchparams = "&zip=" + searchTerm.value; } 
+  let searchFilter = '&search="medical", "health", "mental"'
 
-  const searchTerm = document.querySelector("#inputSearchedTerm");
-  const results = document.querySelector("#results");
+  let url = "https://api.data.charitynavigator.org/v2/Organizations?app_id=f9ce292a&app_key=f0df724ada7935a5f444907c85fad917" + searchFilter 
+  url += searchparams;
 
-  const url = "https://api.data.charitynavigator.org/v2/Organizations?app_id=f9ce292a&app_key=f0df724ada7935a5f444907c85fad917&search=%22medical%22%2C%20%22health%22%2C%20%22mental%22"
-    + "&city=" + searchTerm.value;
+  fetch(url).then(response => response.json())
+  .then(data => {
+    console.log(data)
 
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
+    for (let i = 0; i < data.length; i++) {
+      const charity = data[i]; 
+      const name = charity.charityName; 
+      let website = charity.websiteURL; 
+      let type = charity.irsClassification.nteeType;
 
-      // KEYWORDS TO NARROW DOWN THE SEARCH
-
-      var keywords = ["Health", "Medical"]
-      var debug = false;
-
-
-      for (let i = 0; i < data.length; i++) {
-        const charity = data[i]
-        const name = charity.charityName;
-        let website = charity.websiteURL;
-        let type = charity.irsClassification.nteeType;
-
-        for (let j = 0; j < keywords.length; j++) {
-          keyword = keywords[j];
-          if (name.indexOf(keyword) !== -1 || debug === true) {
-
-            const address = charity.mailingAddress.streetAddress1 + "&nbsp" + charity.mailingAddress.city + "&nbsp" + charity.mailingAddress.postalCode;
-
-
-            if (!website) {
-              website = ""
-            }
-            if (!type) {
-              type = ""
-            }
+      let address = charity.mailingAddress.streetAddress1 + ",&nbsp" + charity.mailingAddress.city + ",&nbsp" + charity.mailingAddress.stateOrProvince + ",&nbsp" + charity.mailingAddress.postalCode;
+      let weburl = website
+      if (!website) { website = "" 
+      weburl = "" } 
+      if (!type) { type = "" } 
+      if (!address) { address = "" }
 
 
-
-            const card = document.createElement("div");
-            card.className = "callout"
-            card.innerHTML = `
-                              <h6>${name}</h6>
-                              <h7>${type}</h7>
-                              ${website ? `<h7>${website}</h7>` : ''}
-                              <h7>${address}</h7>
-                          `
-            results.append(card);
-            break;
-          }
-        }
+      const card = document.createElement("div"); 
+      card.className = "callout"; 
+      card.innerHTML = ` <h4>${name}</h4> 
+      <p><a href="${weburl}" target="_blank">${website}</a></p><br>
+       <p style="text-transform: uppercase">${address}</p> 
+       <h9 style ="color: gray">${type}</h9> ` 
+       results.append(card);
+    }
 
 
 
-
-      }
-    })
+  })
 }
-// }
-
