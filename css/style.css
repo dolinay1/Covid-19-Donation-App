@@ -11,3 +11,39 @@
     border: 1px solid black;
   } */
 
+  .hero {
+    height: 600px;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    background-image: url("../assets/covid19.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Key color */
+.severe {
+  background-color: rgb(219, 26, 26)
+}
+
+.high {
+  background-color: rgb(219, 99, 30)
+}
+
+.medium {
+  background-color: rgb(243, 224, 55)
+}
+
+.low {
+  background-color: rgb(121, 173, 36)
+}
+
+.very-low {
+  background-color: rgb(176, 224, 97)
+}
+
+
+
+
+li {
+  margin-top: 4px;
+}

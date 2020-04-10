@@ -1625,5 +1625,60 @@ function submit(event) {
       }
     })
 }
-// }
 
+// Severity color function
+    
+// TIME DEPENDENT COLOR CHANGES -----------------------
+
+const total = document.querySelector(".totals");
+
+console.log(stateTotalCount1.textContent);
+
+
+
+
+
+// set a variable to all divs with the row class
+const totalDiv = $("div.totals");
+// create a variable with the value of the current our using Moment.js
+let totalValue = total.value;
+
+// user Array.from to create an array from the rows which we are iterating through with the forEach method
+Array.from(totalDivs).forEach(function(totalDiv) {
+// here the specific ids set one each row is set to the variable rowId
+let
+totalId = total.id,
+if (totalId) {
+// store the parsed row id into the rowHour variable
+totalRow = parseInt(totalId);
+  }
+  if (totalRow) {
+// We compare the row id to current hour, and the specific row to the correct "color" class
+// Used vanilla javascript as it was too difficult to use jquery change the row parameter
+      if (totalValue > 10000) {
+        totalDiv.classList.add("severe");
+        
+      } else if ((totalValue < 10000 && totalValue > 5000)){
+        totalDiv.classList.add("high");
+        
+      } else if ((totalValue < 5000 && totalValue > 2500)){
+        totalDiv.classList.add("medium");
+        
+      } else if ((totalValue < 2500 && totalValue > 1000)) {
+      totalDiv.classList.add("low");
+
+      } else if ((totalValue > 1000)) {
+      totalDiv.classList.add("very-low");
+      }
+
+  }
+});
+
+
+// $("div.totals").each(function() {
+//   $(this).html() < 10000 ? $(this).css('color', 'red') : null;
+
+  // ($(this).html() >= 5000 && $(this).html() < 45) ? $(this).css('color', 'green'): null;
+
+  // $(this).html() >= 2000 ? $(this).css('color', 'yellow') : null;
+// });
