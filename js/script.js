@@ -1,13 +1,5 @@
 // VARIABLES
 
-// USA Totals Variables
-usaTotalCases = document.getElementById("usaTotalCases");
-usaTotalDeaths = document.getElementById("TotalDeaths");
-usaActiveCases = document.getElementById("TotalActiveCases");
-usaNewCases = document.getElementById("newDailyCases");
-newDeaths = document.getElementById("newDailyDeaths");
-usaRecordDate = document.getElementById("usaLatestDate");
-
 // 1st state variables
 stateName1 = document.getElementById("state-name-1");
 stateTotalCount1 = document.getElementById("state-total-1");
@@ -15,7 +7,7 @@ stateRecoveredCount1 = document.getElementById("state-recovered-1");
 stateDeathCount1 = document.getElementById("state-death-1");
 stateNewCases1 = document.getElementById("new-state-deaths-1");
 stateNewDeaths1 = document.getElementById("new-state-cases-1");
-stateRecordDate1 = document.getElementById("state-record-date-1");
+// stateRecordDate1 = document.getElementById("state-record-date-1");
 
 // 2nd state variables
 stateName2 = document.getElementById("state-name-2");
@@ -24,7 +16,7 @@ stateRecoveredCount2 = document.getElementById("state-recovered-2");
 stateDeathCount2 = document.getElementById("state-death-2");
 stateNewCases2 = document.getElementById("new-state-deaths-2");
 stateNewDeaths2 = document.getElementById("new-state-cases-2");
-stateRecordDate2 = document.getElementById("state-record-date-2");
+// stateRecordDate2 = document.getElementById("state-record-date-2");
 
 // 3rd state variables
 stateName3 = document.getElementById("state-name-3");
@@ -33,7 +25,7 @@ stateRecoveredCount3 = document.getElementById("state-recovered-3");
 stateDeathCount3 = document.getElementById("state-death-3");
 stateNewCases3 = document.getElementById("new-state-deaths-3");
 stateNewDeaths3 = document.getElementById("new-state-cases-3");
-stateRecordDate3 = document.getElementById("state-record-date-3");
+// stateRecordDate3 = document.getElementById("state-record-date-3");
 
 // 4th state variables
 stateName4 = document.getElementById("state-name-4");
@@ -42,7 +34,7 @@ stateRecoveredCount4 = document.getElementById("state-recovered-4");
 stateDeathCount4 = document.getElementById("state-death-4");
 stateNewCases4 = document.getElementById("new-state-deaths-4");
 stateNewDeaths4 = document.getElementById("new-state-cases-4");
-stateRecordDate4 = document.getElementById("state-record-date-4");
+// stateRecordDate4 = document.getElementById("state-record-date-4");
 
 // 5th state variables
 stateName5 = document.getElementById("state-name-5");
@@ -51,7 +43,7 @@ stateRecoveredCount5 = document.getElementById("state-recovered-5");
 stateDeathCount5 = document.getElementById("state-death-5");
 stateNewCases5 = document.getElementById("new-state-deaths-5");
 stateNewDeaths5 = document.getElementById("new-state-cases-5");
-stateRecordDate5 = document.getElementById("state-record-date-5");
+// stateRecordDate5 = document.getElementById("state-record-date-5");
 
 // 6th state variables
 stateName6 = document.getElementById("state-name-6");
@@ -60,7 +52,7 @@ stateRecoveredCount6 = document.getElementById("state-recovered-6");
 stateDeathCount6 = document.getElementById("state-death-6");
 stateNewCases6 = document.getElementById("new-state-deaths-6");
 stateNewDeaths6 = document.getElementById("new-state-cases-6");
-stateRecordDate6 = document.getElementById("state-record-date-6");
+// stateRecordDate6 = document.getElementById("state-record-date-6");
 
 // 7th state variables
 stateName7 = document.getElementById("state-name-7");
@@ -69,7 +61,7 @@ stateRecoveredCount7 = document.getElementById("state-recovered-7");
 stateDeathCount7 = document.getElementById("state-death-7");
 stateNewCases7 = document.getElementById("new-state-deaths-7");
 stateNewDeaths7 = document.getElementById("new-state-cases-7");
-stateRecordDate7 = document.getElementById("state-record-date-7");
+// stateRecordDate7 = document.getElementById("state-record-date-7");
 
 // 8th state variables
 stateName8 = document.getElementById("state-name-8");
@@ -78,7 +70,7 @@ stateRecoveredCount8 = document.getElementById("state-recovered-8");
 stateDeathCount8 = document.getElementById("state-death-8");
 stateNewCases8 = document.getElementById("new-state-deaths-8");
 stateNewDeaths8 = document.getElementById("new-state-cases-8");
-stateRecordDate8 = document.getElementById("state-record-date-8");
+// stateRecordDate8 = document.getElementById("state-record-date-8");
 
 // 9th state variables
 stateName9 = document.getElementById("state-name-9");
@@ -87,7 +79,7 @@ stateRecoveredCount9 = document.getElementById("state-recovered-9");
 stateDeathCount9 = document.getElementById("state-death-9");
 stateNewCases9 = document.getElementById("new-state-deaths-9");
 stateNewDeaths9 = document.getElementById("new-state-cases-9");
-stateRecordDate9 = document.getElementById("state-record-date-9");
+// stateRecordDate9 = document.getElementById("state-record-date-9");
 
 // 10th state variables
 stateName10 = document.getElementById("state-name-10");
@@ -96,7 +88,7 @@ stateRecoveredCount10 = document.getElementById("state-recovered-10");
 stateDeathCount10 = document.getElementById("state-death-10");
 stateNewCases10 = document.getElementById("new-state-deaths-10");
 stateNewDeaths10 = document.getElementById("new-state-cases-10");
-stateRecordDate10 = document.getElementById("state-record-date-10");
+// stateRecordDate10 = document.getElementById("state-record-date-10");
 
 // 11th state variables
 stateName11 = document.getElementById("state-name-11");
@@ -105,7 +97,7 @@ stateRecoveredCount11 = document.getElementById("state-recovered-11");
 stateDeathCount11 = document.getElementById("state-death-11");
 stateNewCases11 = document.getElementById("new-state-deaths-11");
 stateNewDeaths11 = document.getElementById("new-state-cases-11");
-stateRecordDate11 = document.getElementById("state-record-date-11");
+// stateRecordDate11 = document.getElementById("state-record-date-11");
 
 // 12th state variables
 stateName12 = document.getElementById("state-name-12");
@@ -114,7 +106,7 @@ stateRecoveredCount12 = document.getElementById("state-recovered-12");
 stateDeathCount12 = document.getElementById("state-death-12");
 stateNewCases12 = document.getElementById("new-state-deaths-12");
 stateNewDeaths12 = document.getElementById("new-state-cases-12");
-stateRecordDate12 = document.getElementById("state-record-date-12");
+// stateRecordDate12 = document.getElementById("state-record-date-12");
 
 // 13th state variables
 stateName13 = document.getElementById("state-name-13");
@@ -123,7 +115,7 @@ stateRecoveredCount13 = document.getElementById("state-recovered-13");
 stateDeathCount13 = document.getElementById("state-death-13");
 stateNewCases13 = document.getElementById("new-state-deaths-13");
 stateNewDeaths13 = document.getElementById("new-state-cases-13");
-stateRecordDate13 = document.getElementById("state-record-date-13");
+// stateRecordDate13 = document.getElementById("state-record-date-13");
 
 // 14th state variables
 stateName14 = document.getElementById("state-name-14");
@@ -132,7 +124,7 @@ stateRecoveredCount14 = document.getElementById("state-recovered-14");
 stateDeathCount14 = document.getElementById("state-death-14");
 stateNewCases14 = document.getElementById("new-state-deaths-14");
 stateNewDeaths14 = document.getElementById("new-state-cases-14");
-stateRecordDate14 = document.getElementById("state-record-date-14");
+// stateRecordDate14 = document.getElementById("state-record-date-14");
 
 
 // 15th state variables
@@ -142,7 +134,7 @@ stateRecoveredCount15 = document.getElementById("state-recovered-15");
 stateDeathCount15 = document.getElementById("state-death-15");
 stateNewCases15 = document.getElementById("new-state-deaths-15");
 stateNewDeaths15 = document.getElementById("new-state-cases-15");
-stateRecordDate15 = document.getElementById("state-record-date-15");
+// stateRecordDate15 = document.getElementById("state-record-date-15");
 
 // 16th state variables
 stateName16 = document.getElementById("state-name-16");
@@ -151,7 +143,7 @@ stateRecoveredCount16 = document.getElementById("state-recovered-16");
 stateDeathCount16 = document.getElementById("state-death-16");
 stateNewCases16 = document.getElementById("new-state-deaths-16");
 stateNewDeaths16 = document.getElementById("new-state-cases-16");
-stateRecordDate16 = document.getElementById("state-record-date-16");
+// stateRecordDate16 = document.getElementById("state-record-date-16");
 
 // 17th state variables
 stateName17 = document.getElementById("state-name-17");
@@ -160,7 +152,7 @@ stateRecoveredCount17 = document.getElementById("state-recovered-17");
 stateDeathCount17 = document.getElementById("state-death-17");
 stateNewCases17 = document.getElementById("new-state-deaths-17");
 stateNewDeaths17 = document.getElementById("new-state-cases-17");
-stateRecordDate17 = document.getElementById("state-record-date-17");
+// stateRecordDate17 = document.getElementById("state-record-date-17");
 
 // 18th state variables
 stateName18 = document.getElementById("state-name-18");
@@ -169,7 +161,7 @@ stateRecoveredCount18 = document.getElementById("state-recovered-18");
 stateDeathCount18 = document.getElementById("state-death-18");
 stateNewCases18 = document.getElementById("new-state-deaths-18");
 stateNewDeaths18 = document.getElementById("new-state-cases-18");
-stateRecordDate18 = document.getElementById("state-record-date-18");
+// stateRecordDate18 = document.getElementById("state-record-date-18");
 
 // 19th state variables
 stateName19 = document.getElementById("state-name-19");
@@ -178,7 +170,7 @@ stateRecoveredCount19 = document.getElementById("state-recovered-19");
 stateDeathCount19 = document.getElementById("state-death-19");
 stateNewCases19 = document.getElementById("new-state-deaths-19");
 stateNewDeaths19 = document.getElementById("new-state-cases-19");
-stateRecordDate19 = document.getElementById("state-record-date-19");
+// stateRecordDate19 = document.getElementById("state-record-date-19");
 
 // 20th state variables
 stateName20 = document.getElementById("state-name-20");
@@ -187,7 +179,7 @@ stateRecoveredCount20 = document.getElementById("state-recovered-20");
 stateDeathCount20 = document.getElementById("state-death-20");
 stateNewCases20 = document.getElementById("new-state-deaths-20");
 stateNewDeaths20 = document.getElementById("new-state-cases-20");
-stateRecordDate20 = document.getElementById("state-record-date-20");
+// stateRecordDate20 = document.getElementById("state-record-date-20");
 
 // 21th state variables
 stateName21 = document.getElementById("state-name-21");
@@ -196,7 +188,7 @@ stateRecoveredCount21 = document.getElementById("state-recovered-21");
 stateDeathCount21 = document.getElementById("state-death-21");
 stateNewCases21 = document.getElementById("new-state-deaths-21");
 stateNewDeaths21 = document.getElementById("new-state-cases-21");
-stateRecordDate21 = document.getElementById("state-record-date-21");
+// stateRecordDate21 = document.getElementById("state-record-date-21");
 
 // 22th state variables
 stateName22 = document.getElementById("state-name-22");
@@ -205,7 +197,7 @@ stateRecoveredCount22 = document.getElementById("state-recovered-22");
 stateDeathCount22 = document.getElementById("state-death-22");
 stateNewCases22 = document.getElementById("new-state-deaths-22");
 stateNewDeaths22 = document.getElementById("new-state-cases-22");
-stateRecordDate22 = document.getElementById("state-record-date-22");
+// stateRecordDate22 = document.getElementById("state-record-date-22");
 
 // 23th state variables
 stateName23 = document.getElementById("state-name-23");
@@ -466,154 +458,135 @@ stateRecordDate50 = document.getElementById("state-record-date-50");
 // -----------------------------------------
 
 
-fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_states_worldometers_latest.php", {
+  fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_states_worldometers_latest.php", {
   "method": "GET",
   "headers": {
-    "x-rapidapi-host": "covid19-monitor-pro.p.rapidapi.com",
-    "x-rapidapi-key": "1bdd105de1msh082bf89a915d1bep123081jsn62ec3c344148"
+  "x-rapidapi-host": "covid19-monitor-pro.p.rapidapi.com",
+  "x-rapidapi-key": "1bdd105de1msh082bf89a915d1bep123081jsn62ec3c344148"
   }
-})
+  })
 
   .then(response => response.json())
-
+    
   .then((data) => {
     console.log(data);
     // us overall info
     console.log(data[0]);
 
-    // USA Totals
-    // USA Totals Cases
-    usaTotalCases.textContent = data[0].total_cases;
-
-    // USA Active Cases
-    usaActiveCases.textContent = data[0].active_cases
-
-    // USA Total Deaths
-    usaTotalDeaths.textContent = data[0].total_deaths;
-
-    // USA New Daily Cases
-    usaNewCases.textContent = data[0].new_cases;
-
-    // USA New Daily Deaths
-    newDeaths.textContent = data[0].new_deaths;
-
-    // USA Last Date Updated
-    usaRecordDate.textContent = data[0].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
 
     // New York ------------------------------
 
     // New York overall info
-
+    
     // New York state name
     stateName1.textContent = data[1].state_name;
-
+    
     // New York total cases
     stateTotalCount1.textContent = data[1].total_cases;
-
+    
     // New York new cases
     stateNewCases1.textContent = data[1].new_cases;
-
+    
     // New York new deaths
     stateNewDeaths1.textContent = data[1].new_deaths;
-
+    
     // New York active cases
     stateDeathCount1.textContent = data[1].total_deaths;
-
+    
     // New York last date record
-    stateRecordDate1.textContent = data[1].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
+    // stateRecordDate1.textContent = data[1].record_date.substr(5, 5).replace("-","/") + "/2020";
+    
 
 
     // New Jersey ------------------------------
 
     // New Jersey state name
     stateName2.textContent = data[2].state_name;
-
+    
     // New Jersey total cases
     stateTotalCount2.textContent = data[2].total_cases;
-
+    
     // New Jersey new cases
     stateNewCases2.textContent = data[2].new_cases;
-
+    
     // New Jersey new deaths
     stateNewDeaths2.textContent = data[2].new_deaths;
-
+    
     // New Jersey active cases
     stateDeathCount2.textContent = data[2].total_deaths;
-
+    
     // New Jersey last date record
-    stateRecordDate2.textContent = data[2].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate2.textContent = data[2].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Michigan ------------------------------
+     // Michigan ------------------------------
 
-    // Michigan state name
-    stateName3.textContent = data[3].state_name;
-
-    // Michigan total cases
-    stateTotalCount3.textContent = data[3].total_cases;
-
-    // Michigan new cases
-    stateNewCases3.textContent = data[3].new_cases;
-
-    // Michigan new deaths
-    stateNewDeaths3.textContent = data[3].new_deaths;
-
-    // Michigan active cases
-    stateDeathCount3.textContent = data[3].total_deaths;
-
-    // Michigan last date record
-    stateRecordDate3.textContent = data[3].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // California
-
-    // California state name ------------------------------
-    stateName4.textContent = data[4].state_name;
-
-    // California total cases
-    stateTotalCount4.textContent = data[4].total_cases;
-
-    // California new cases
-    stateNewCases4.textContent = data[4].new_cases;
-
-    // California new deaths
-    stateNewDeaths4.textContent = data[4].new_deaths;
-
-    // California active cases
-    stateDeathCount4.textContent = data[4].total_deaths;
-
-    // California last date record
-    stateRecordDate4.textContent = data[4].record_date.substr(5, 5).replace("-", "/") + "/2020";
+  // Michigan state name
+  stateName3.textContent = data[3].state_name;
+    
+  // Michigan total cases
+  stateTotalCount3.textContent = data[3].total_cases;
+  
+  // Michigan new cases
+  stateNewCases3.textContent = data[3].new_cases;
+  
+  // Michigan new deaths
+  stateNewDeaths3.textContent = data[3].new_deaths;
+  
+  // Michigan active cases
+  stateDeathCount3.textContent = data[3].total_deaths;
+  
+  // Michigan last date record
+  // stateRecordDate3.textContent = data[3].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Louisiana ------------------------------
+     // California
+
+  // California state name ------------------------------
+  stateName4.textContent = data[4].state_name;
+    
+  // California total cases
+  stateTotalCount4.textContent = data[4].total_cases;
+  
+  // California new cases
+  stateNewCases4.textContent = data[4].new_cases;
+  
+  // California new deaths
+  stateNewDeaths4.textContent = data[4].new_deaths;
+  
+  // California active cases
+  stateDeathCount4.textContent = data[4].total_deaths;
+  
+  // California last date record
+  // stateRecordDate4.textContent = data[4].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+      // Louisiana ------------------------------
 
     // Louisiana state name
     stateName5.textContent = data[5].state_name;
-
+    
     // Louisiana total cases
     stateTotalCount5.textContent = data[5].total_cases;
-
+    
     // Louisiana new cases
     stateNewCases5.textContent = data[5].new_cases;
-
+    
     // Louisiana new deaths
     stateNewDeaths5.textContent = data[5].new_deaths;
-
+    
     // Louisiana active cases
     stateDeathCount5.textContent = data[5].total_deaths;
-
+    
     // Louisiana last date record
-    stateRecordDate5.textContent = data[5].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate5.textContent = data[5].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Massachusetts ------------------------------
+     // Massachusetts ------------------------------
 
     // Massachusetts state name
     stateName6.textContent = data[6].state_name;
-
+        
     // Massachusetts total cases
     stateTotalCount6.textContent = data[6].total_cases;
 
@@ -627,14 +600,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount6.textContent = data[6].total_deaths;
 
     // Massachusetts last date record
-    stateRecordDate6.textContent = data[6].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate6.textContent = data[6].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Pennsylvania ------------------------------
+     // Pennsylvania ------------------------------
 
     // Pennsylvania state name
     stateName7.textContent = data[7].state_name;
-
+          
     // Pennsylvania total cases
     stateTotalCount7.textContent = data[7].total_cases;
 
@@ -648,14 +621,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount7.textContent = data[7].total_deaths;
 
     // Pennsylvania last date record
-    stateRecordDate7.textContent = data[7].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate7.textContent = data[7].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Florida ------------------------------
+     // Florida ------------------------------
 
     // Florida state name
     stateName8.textContent = data[8].state_name;
-
+            
     // Florida total cases
     stateTotalCount8.textContent = data[8].total_cases;
 
@@ -669,14 +642,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount8.textContent = data[8].total_deaths;
 
     // Florida last date record
-    stateRecordDate8.textContent = data[8].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate8.textContent = data[8].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Illinois ------------------------------
+     // Illinois ------------------------------
 
     // Illinois state name
     stateName9.textContent = data[9].state_name;
-
+            
     // Illinois total cases
     stateTotalCount9.textContent = data[9].total_cases;
 
@@ -690,14 +663,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount9.textContent = data[9].total_deaths;
 
     // Illinois last date record
-    stateRecordDate9.textContent = data[9].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate9.textContent = data[9].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Georgia ------------------------------
+     // Georgia ------------------------------
 
     // Georgia state name
     stateName10.textContent = data[10].state_name;
-
+        
     // Georgia total cases
     stateTotalCount10.textContent = data[10].total_cases;
 
@@ -711,14 +684,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount10.textContent = data[10].total_deaths;
 
     // Georgia last date record
-    stateRecordDate10.textContent = data[10].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate10.textContent = data[10].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Texas ------------------------------
+     // Texas ------------------------------
 
     // Texas state name
     stateName11.textContent = data[11].state_name;
-
+        
     // Texas total cases
     stateTotalCount11.textContent = data[11].total_cases;
 
@@ -732,56 +705,56 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount11.textContent = data[11].total_deaths;
 
     // Texas last date record
-    stateRecordDate11.textContent = data[11].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate11.textContent = data[11].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Washington ------------------------------
+     // Washington ------------------------------
 
-    // Washington state name
-    stateName12.textContent = data[12].state_name;
+   // Washington state name
+   stateName12.textContent = data[12].state_name;
+        
+   // Washington total cases
+   stateTotalCount12.textContent = data[12].total_cases;
 
-    // Washington total cases
-    stateTotalCount12.textContent = data[12].total_cases;
+   // Washington new cases
+   stateNewCases12.textContent = data[12].new_cases;
 
-    // Washington new cases
-    stateNewCases12.textContent = data[12].new_cases;
+   // Washington new deaths
+   stateNewDeaths12.textContent = data[12].new_deaths;
 
-    // Washington new deaths
-    stateNewDeaths12.textContent = data[12].new_deaths;
+   // Washington active cases
+   stateDeathCount12.textContent = data[12].total_deaths;
 
-    // Washington active cases
-    stateDeathCount12.textContent = data[12].total_deaths;
-
-    // Washington last date record
-    stateRecordDate12.textContent = data[12].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Connecticut ------------------------------
-
-    // Connecticut state name
-    stateName13.textContent = data[13].state_name;
-
-    // Connecticut total cases
-    stateTotalCount13.textContent = data[13].total_cases;
-
-    // Connecticut new cases
-    stateNewCases13.textContent = data[13].new_cases;
-
-    // Connecticut new deaths
-    stateNewDeaths13.textContent = data[13].new_deaths;
-
-    // Connecticut active cases
-    stateDeathCount13.textContent = data[13].total_deaths;
-
-    // Connecticut last date record
-    stateRecordDate13.textContent = data[13].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Washington last date record
+  //  stateRecordDate12.textContent = data[12].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Indiana ------------------------------
+     // Connecticut ------------------------------
+
+   // Connecticut state name
+   stateName13.textContent = data[13].state_name;
+        
+   // Connecticut total cases
+   stateTotalCount13.textContent = data[13].total_cases;
+
+   // Connecticut new cases
+   stateNewCases13.textContent = data[13].new_cases;
+
+   // Connecticut new deaths
+   stateNewDeaths13.textContent = data[13].new_deaths;
+
+   // Connecticut active cases
+   stateDeathCount13.textContent = data[13].total_deaths;
+
+   // Connecticut last date record
+  //  stateRecordDate13.textContent = data[13].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // Indiana ------------------------------
 
     // Indiana state name
     stateName14.textContent = data[14].state_name;
-
+        
     // Indiana total cases
     stateTotalCount14.textContent = data[14].total_cases;
 
@@ -795,35 +768,35 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount14.textContent = data[14].total_deaths;
 
     // Indiana last date record
-    stateRecordDate14.textContent = data[14].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate14.textContent = data[14].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Colorodo ------------------------------
 
-    // Colorodo state name
-    stateName15.textContent = data[15].state_name;
+   // Colorodo state name
+   stateName15.textContent = data[15].state_name;
+        
+   // Colorodo total cases
+   stateTotalCount15.textContent = data[15].total_cases;
 
-    // Colorodo total cases
-    stateTotalCount15.textContent = data[15].total_cases;
+   // Colorodo new cases
+   stateNewCases15.textContent = data[15].new_cases;
 
-    // Colorodo new cases
-    stateNewCases15.textContent = data[15].new_cases;
+   // Colorodo new deaths
+   stateNewDeaths15.textContent = data[15].new_deaths;
 
-    // Colorodo new deaths
-    stateNewDeaths15.textContent = data[15].new_deaths;
+   // Colorodo active cases
+   stateDeathCount15.textContent = data[15].total_deaths;
 
-    // Colorodo active cases
-    stateDeathCount15.textContent = data[15].total_deaths;
-
-    // Colorodo last date record
-    stateRecordDate15.textContent = data[15].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Colorodo last date record
+  //  stateRecordDate15.textContent = data[15].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Maryland ------------------------------
 
     // Maryland state name
     stateName16.textContent = data[16].state_name;
-
+        
     // Maryland total cases
     stateTotalCount16.textContent = data[16].total_cases;
 
@@ -837,14 +810,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount16.textContent = data[16].total_deaths;
 
     // Maryland last date record
-    stateRecordDate16.textContent = data[16].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate16.textContent = data[16].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Ohio ------------------------------
 
     // Ohio state name
     stateName17.textContent = data[17].state_name;
-
+        
     // Ohio total cases
     stateTotalCount17.textContent = data[17].total_cases;
 
@@ -858,14 +831,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount17.textContent = data[17].total_deaths;
 
     // Ohio last date record
-    stateRecordDate17.textContent = data[17].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate17.textContent = data[17].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Tennessee ------------------------------
 
     // Tennessee state name
     stateName18.textContent = data[18].state_name;
-
+        
     // Tennessee total cases
     stateTotalCount18.textContent = data[18].total_cases;
 
@@ -879,14 +852,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount18.textContent = data[18].total_deaths;
 
     // Tennessee last date record
-    stateRecordDate18.textContent = data[18].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate18.textContent = data[18].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Virginia ------------------------------
 
     // Virginia state name
     stateName19.textContent = data[19].state_name;
-
+        
     // Virginia total cases
     stateTotalCount19.textContent = data[19].total_cases;
 
@@ -900,14 +873,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount19.textContent = data[19].total_deaths;
 
     // Virginia last date record
-    stateRecordDate19.textContent = data[19].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate19.textContent = data[19].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // North Carolina ------------------------------
 
     // North Carolina state name
     stateName20.textContent = data[20].state_name;
-
+        
     // North Carolina total cases
     stateTotalCount20.textContent = data[20].total_cases;
 
@@ -921,14 +894,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount20.textContent = data[20].total_deaths;
 
     // North Carolina last date record
-    stateRecordDate20.textContent = data[20].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate20.textContent = data[20].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Missouri ------------------------------
 
     // Missouri Carolina state name
     stateName21.textContent = data[21].state_name;
-
+        
     // Missouri Carolina total cases
     stateTotalCount21.textContent = data[21].total_cases;
 
@@ -942,14 +915,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount21.textContent = data[21].total_deaths;
 
     // Missouri Carolina last date record
-    stateRecordDate21.textContent = data[21].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate21.textContent = data[21].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
     // Wisconsin ------------------------------
 
     // Wisconsin state name
     stateName22.textContent = data[22].state_name;
-
+        
     // Wisconsin total cases
     stateTotalCount22.textContent = data[22].total_cases;
 
@@ -963,13 +936,13 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount22.textContent = data[22].total_deaths;
 
     // Wisconsin last date record
-    stateRecordDate22.textContent = data[22].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate22.textContent = data[22].record_date.substr(5, 5).replace("-","/") + "/2020";
 
     // Arizona ------------------------------
 
     // Arizona state name
     stateName23.textContent = data[23].state_name;
-
+        
     // Arizona total cases
     stateTotalCount23.textContent = data[23].total_cases;
 
@@ -983,14 +956,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount23.textContent = data[23].total_deaths;
 
     // Arizona last date record
-    stateRecordDate23.textContent = data[23].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate23.textContent = data[23].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // South Carolina ------------------------------
+     // South Carolina ------------------------------
 
     // South Carolina state name
     stateName24.textContent = data[24].state_name;
-
+        
     // South Carolina total cases
     stateTotalCount24.textContent = data[24].total_cases;
 
@@ -1004,14 +977,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount24.textContent = data[24].total_deaths;
 
     // South Carolina last date record
-    stateRecordDate24.textContent = data[24].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate24.textContent = data[24].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Alabama ------------------------------
+     // Alabama ------------------------------
 
     // Alabama state name
     stateName25.textContent = data[25].state_name;
-
+        
     // Alabama total cases
     stateTotalCount25.textContent = data[25].total_cases;
 
@@ -1025,35 +998,35 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount25.textContent = data[25].total_deaths;
 
     // Alabama last date record
-    stateRecordDate25.textContent = data[25].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate25.textContent = data[25].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Nevada ------------------------------
+     // Nevada ------------------------------
 
-    // Nevada state name
-    stateName26.textContent = data[26].state_name;
+   // Nevada state name
+   stateName26.textContent = data[26].state_name;
+        
+   // Nevada total cases
+   stateTotalCount26.textContent = data[26].total_cases;
 
-    // Nevada total cases
-    stateTotalCount26.textContent = data[26].total_cases;
+   // Nevada new cases
+   stateNewCases26.textContent = data[26].new_cases;
 
-    // Nevada new cases
-    stateNewCases26.textContent = data[26].new_cases;
+   // Nevada new deaths
+   stateNewDeaths26.textContent = data[26].new_deaths;
 
-    // Nevada new deaths
-    stateNewDeaths26.textContent = data[26].new_deaths;
+   // Nevada active cases
+   stateDeathCount26.textContent = data[26].total_deaths;
 
-    // Nevada active cases
-    stateDeathCount26.textContent = data[26].total_deaths;
-
-    // Nevada last date record
-    stateRecordDate26.textContent = data[26].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Nevada last date record
+  //  stateRecordDate26.textContent = data[26].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Mississippi ------------------------------
+     // Mississippi ------------------------------
 
     // Mississippi state name
     stateName27.textContent = data[27].state_name;
-
+        
     // Mississippi total cases
     stateTotalCount27.textContent = data[27].total_cases;
 
@@ -1067,14 +1040,14 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount27.textContent = data[27].total_deaths;
 
     // Mississippi last date record
-    stateRecordDate27.textContent = data[27].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate27.textContent = data[27].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Utah ------------------------------
+     // Utah ------------------------------
 
     // Utah state name
     stateName28.textContent = data[28].state_name;
-
+        
     // Utah total cases
     stateTotalCount28.textContent = data[28].total_cases;
 
@@ -1088,552 +1061,543 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateDeathCount28.textContent = data[28].total_deaths;
 
     // Utah last date record
-    stateRecordDate28.textContent = data[28].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate28.textContent = data[28].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Oklahoma ------------------------------
+     // Oklahoma ------------------------------
 
-    // Oklahoma state name
-    stateName29.textContent = data[29].state_name;
+   // Oklahoma state name
+   stateName29.textContent = data[29].state_name;
+        
+   // Oklahoma total cases
+   stateTotalCount29.textContent = data[29].total_cases;
 
-    // Oklahoma total cases
-    stateTotalCount29.textContent = data[29].total_cases;
+   // Oklahoma new cases
+   stateNewCases29.textContent = data[29].new_cases;
 
-    // Oklahoma new cases
-    stateNewCases29.textContent = data[29].new_cases;
+   // Oklahoma new deaths
+   stateNewDeaths29.textContent = data[29].new_deaths;
 
-    // Oklahoma new deaths
-    stateNewDeaths29.textContent = data[29].new_deaths;
+   // Oklahoma active cases
+   stateDeathCount29.textContent = data[29].total_deaths;
 
-    // Oklahoma active cases
-    stateDeathCount29.textContent = data[29].total_deaths;
-
-    // Oklahoma last date record
-    stateRecordDate29.textContent = data[29].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Rhode Island ------------------------------
-
-    // Rhode Island state name
-    stateName30.textContent = data[30].state_name;
-
-    // Rhode Island total cases
-    stateTotalCount30.textContent = data[30].total_cases;
-
-    // Rhode Island new cases
-    stateNewCases30.textContent = data[30].new_cases;
-
-    // Rhode Island new deaths
-    stateNewDeaths30.textContent = data[30].new_deaths;
-
-    // Rhode Island active cases
-    stateDeathCount30.textContent = data[30].total_deaths;
-
-    // Rhode Island last date record
-    stateRecordDate30.textContent = data[30].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Oklahoma last date record
+  //  stateRecordDate29.textContent = data[29].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // District of Columbia ------------------------------
+     // Rhode Island ------------------------------
 
-    // District of Columbia state name
-    stateName31.textContent = data[31].state_name;
+   // Rhode Island state name
+   stateName30.textContent = data[30].state_name;
+        
+   // Rhode Island total cases
+   stateTotalCount30.textContent = data[30].total_cases;
 
-    // District of Columbia total cases
-    stateTotalCount31.textContent = data[31].total_cases;
+   // Rhode Island new cases
+   stateNewCases30.textContent = data[30].new_cases;
 
-    // District of Columbia new cases
-    stateNewCases31.textContent = data[31].new_cases;
+   // Rhode Island new deaths
+   stateNewDeaths30.textContent = data[30].new_deaths;
 
-    // District of Columbia new deaths
-    stateNewDeaths31.textContent = data[31].new_deaths;
+   // Rhode Island active cases
+   stateDeathCount30.textContent = data[30].total_deaths;
 
-    // District of Columbia active cases
-    stateDeathCount31.textContent = data[31].total_deaths;
-
-    // District of Columbia last date record
-    stateRecordDate31.textContent = data[31].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Rhode Island last date record
+  //  stateRecordDate30.textContent = data[30].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Kentucky ------------------------------
+     // District of Columbia ------------------------------
+
+     // District of Columbia state name
+   stateName31.textContent = data[31].state_name;
+        
+   // District of Columbia total cases
+   stateTotalCount31.textContent = data[31].total_cases;
+
+   // District of Columbia new cases
+   stateNewCases31.textContent = data[31].new_cases;
+
+   // District of Columbia new deaths
+   stateNewDeaths31.textContent = data[31].new_deaths;
+
+   // District of Columbia active cases
+   stateDeathCount31.textContent = data[31].total_deaths;
+
+   // District of Columbia last date record
+  //  stateRecordDate31.textContent = data[31].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // Kentucky ------------------------------
 
     // Kentucky state name
     stateName32.textContent = data[32].state_name;
-
+        
     // Kentucky total cases
     stateTotalCount32.textContent = data[32].total_cases;
-
+ 
     // Kentucky new cases
     stateNewCases32.textContent = data[32].new_cases;
-
+ 
     // Kentucky new deaths
     stateNewDeaths32.textContent = data[32].new_deaths;
-
+ 
     // Kentucky active cases
     stateDeathCount32.textContent = data[32].total_deaths;
-
+ 
     // Kentucky last date record
-    stateRecordDate32.textContent = data[32].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate32.textContent = data[32].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Oregon ------------------------------
+     // Oregon ------------------------------
 
     // Oregon state name
     stateName33.textContent = data[33].state_name;
-
+        
     // Oregon total cases
     stateTotalCount33.textContent = data[33].total_cases;
-
+ 
     // Oregon new cases
     stateNewCases33.textContent = data[33].new_cases;
-
+ 
     // Oregon new deaths
     stateNewDeaths33.textContent = data[33].new_deaths;
-
+ 
     // Oregon active cases
     stateDeathCount33.textContent = data[33].total_deaths;
-
+ 
     // Oregon last date record
-    stateRecordDate33.textContent = data[33].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate33.textContent = data[33].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Idaho ------------------------------
+     // Idaho ------------------------------
 
-    // Idaho state name
-    stateName34.textContent = data[34].state_name;
+     // Idaho state name
+   stateName34.textContent = data[34].state_name;
+        
+   // Idaho total cases
+   stateTotalCount34.textContent = data[34].total_cases;
 
-    // Idaho total cases
-    stateTotalCount34.textContent = data[34].total_cases;
+   // Idaho new cases
+   stateNewCases34.textContent = data[34].new_cases;
 
-    // Idaho new cases
-    stateNewCases34.textContent = data[34].new_cases;
+   // Idaho new deaths
+   stateNewDeaths34.textContent = data[34].new_deaths;
 
-    // Idaho new deaths
-    stateNewDeaths34.textContent = data[34].new_deaths;
+   // Idaho active cases
+   stateDeathCount34.textContent = data[34].total_deaths;
 
-    // Idaho active cases
-    stateDeathCount34.textContent = data[34].total_deaths;
-
-    // Idaho last date record
-    stateRecordDate34.textContent = data[34].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Minnesota ------------------------------
-
-    // Minnesota state name
-    stateName35.textContent = data[35].state_name;
-
-    // Minnesota total cases
-    stateTotalCount35.textContent = data[35].total_cases;
-
-    // Minnesota new cases
-    stateNewCases35.textContent = data[35].new_cases;
-
-    // Minnesota new deaths
-    stateNewDeaths35.textContent = data[35].new_deaths;
-
-    // Minnesota active cases
-    stateDeathCount35.textContent = data[35].total_deaths;
-
-    // Minnesota last date record
-    stateRecordDate35.textContent = data[35].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Idaho last date record
+  //  stateRecordDate34.textContent = data[34].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Iowa ------------------------------
+     // Minnesota ------------------------------
 
-    // Iowa state name
-    stateName36.textContent = data[36].state_name;
+     // Minnesota state name
+   stateName35.textContent = data[35].state_name;
+        
+   // Minnesota total cases
+   stateTotalCount35.textContent = data[35].total_cases;
 
-    // Iowa total cases
-    stateTotalCount36.textContent = data[36].total_cases;
+   // Minnesota new cases
+   stateNewCases35.textContent = data[35].new_cases;
 
-    // Iowa new cases
-    stateNewCases36.textContent = data[36].new_cases;
+   // Minnesota new deaths
+   stateNewDeaths35.textContent = data[35].new_deaths;
 
-    // Iowa new deaths
-    stateNewDeaths36.textContent = data[36].new_deaths;
+   // Minnesota active cases
+   stateDeathCount35.textContent = data[35].total_deaths;
 
-    // Iowa active cases
-    stateDeathCount36.textContent = data[36].total_deaths;
-
-    // Iowa last date record
-    stateRecordDate36.textContent = data[36].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Delaware ------------------------------
-
-    // Delaware state name
-    stateName37.textContent = data[37].state_name;
-
-    // Delaware total cases
-    stateTotalCount37.textContent = data[37].total_cases;
-
-    // Delaware new cases
-    stateNewCases37.textContent = data[37].new_cases;
-
-    // Delaware new deaths
-    stateNewDeaths37.textContent = data[37].new_deaths;
-
-    // Delaware active cases
-    stateDeathCount37.textContent = data[37].total_deaths;
-
-    // Delaware last date record
-    stateRecordDate37.textContent = data[37].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Minnesota last date record
+  //  stateRecordDate35.textContent = data[35].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Arkansas ------------------------------
+     // Iowa ------------------------------
 
-    // Arkansas state name
-    stateName38.textContent = data[38].state_name;
+     // Iowa state name
+   stateName36.textContent = data[36].state_name;
+        
+   // Iowa total cases
+   stateTotalCount36.textContent = data[36].total_cases;
 
-    // Arkansas total cases
-    stateTotalCount38.textContent = data[38].total_cases;
+   // Iowa new cases
+   stateNewCases36.textContent = data[36].new_cases;
 
-    // Arkansas new cases
-    stateNewCases38.textContent = data[38].new_cases;
+   // Iowa new deaths
+   stateNewDeaths36.textContent = data[36].new_deaths;
 
-    // Arkansas new deaths
-    stateNewDeaths38.textContent = data[38].new_deaths;
+   // Iowa active cases
+   stateDeathCount36.textContent = data[36].total_deaths;
 
-    // Arkansas active cases
-    stateDeathCount38.textContent = data[38].total_deaths;
-
-    // Arkansas last date record
-    stateRecordDate38.textContent = data[38].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Kansas ------------------------------
-
-    // Kansas state name
-    stateName39.textContent = data[39].state_name;
-
-    // Kansas total cases
-    stateTotalCount39.textContent = data[39].total_cases;
-
-    // Kansas new cases
-    stateNewCases39.textContent = data[39].new_cases;
-
-    // Kansas new deaths
-    stateNewDeaths39.textContent = data[39].new_deaths;
-
-    // Kansas active cases
-    stateDeathCount39.textContent = data[39].total_deaths;
-
-    // Kansas last date record
-    stateRecordDate39.textContent = data[39].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Iowa last date record
+  //  stateRecordDate36.textContent = data[36].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // New Mexico ------------------------------
+     // Delaware ------------------------------
+
+     // Delaware state name
+   stateName37.textContent = data[37].state_name;
+        
+   // Delaware total cases
+   stateTotalCount37.textContent = data[37].total_cases;
+
+   // Delaware new cases
+   stateNewCases37.textContent = data[37].new_cases;
+
+   // Delaware new deaths
+   stateNewDeaths37.textContent = data[37].new_deaths;
+
+   // Delaware active cases
+   stateDeathCount37.textContent = data[37].total_deaths;
+
+   // Delaware last date record
+  //  stateRecordDate37.textContent = data[37].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // Arkansas ------------------------------
+
+     // Arkansas state name
+   stateName38.textContent = data[38].state_name;
+        
+   // Arkansas total cases
+   stateTotalCount38.textContent = data[38].total_cases;
+
+   // Arkansas new cases
+   stateNewCases38.textContent = data[38].new_cases;
+
+   // Arkansas new deaths
+   stateNewDeaths38.textContent = data[38].new_deaths;
+
+   // Arkansas active cases
+   stateDeathCount38.textContent = data[38].total_deaths;
+
+   // Arkansas last date record
+  //  stateRecordDate38.textContent = data[38].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // Kansas ------------------------------
+
+     // Kansas state name
+   stateName39.textContent = data[39].state_name;
+        
+   // Kansas total cases
+   stateTotalCount39.textContent = data[39].total_cases;
+
+   // Kansas new cases
+   stateNewCases39.textContent = data[39].new_cases;
+
+   // Kansas new deaths
+   stateNewDeaths39.textContent = data[39].new_deaths;
+
+   // Kansas active cases
+   stateDeathCount39.textContent = data[39].total_deaths;
+
+   // Kansas last date record
+  //  stateRecordDate39.textContent = data[39].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // New Mexico ------------------------------
 
     // New Mexico state name
     stateName40.textContent = data[40].state_name;
-
+        
     // New Mexico total cases
     stateTotalCount40.textContent = data[40].total_cases;
-
+ 
     // New Mexico new cases
     stateNewCases40.textContent = data[40].new_cases;
-
+ 
     // New Mexico new deaths
     stateNewDeaths40.textContent = data[40].new_deaths;
-
+ 
     // New Mexico active cases
     stateDeathCount40.textContent = data[40].total_deaths;
-
+ 
     // New Mexico last date record
-    stateRecordDate40.textContent = data[40].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate40.textContent = data[40].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // New Hampshire ------------------------------
+     // New Hampshire ------------------------------
 
-    // New Hampshire state name
-    stateName41.textContent = data[41].state_name;
+     // New Hampshire state name
+   stateName41.textContent = data[41].state_name;
+        
+   // New Hampshire total cases
+   stateTotalCount41.textContent = data[41].total_cases;
 
-    // New Hampshire total cases
-    stateTotalCount41.textContent = data[41].total_cases;
+   // New Hampshire new cases
+   stateNewCases41.textContent = data[41].new_cases;
 
-    // New Hampshire new cases
-    stateNewCases41.textContent = data[41].new_cases;
+   // New Hampshire new deaths
+   stateNewDeaths41.textContent = data[41].new_deaths;
 
-    // New Hampshire new deaths
-    stateNewDeaths41.textContent = data[41].new_deaths;
+   // New Hampshire active cases
+   stateDeathCount41.textContent = data[41].total_deaths;
 
-    // New Hampshire active cases
-    stateDeathCount41.textContent = data[41].total_deaths;
-
-    // New Hampshire last date record
-    stateRecordDate41.textContent = data[41].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Vermont ------------------------------
-
-    // Vermont state name
-    stateName42.textContent = data[42].state_name;
-
-    // Vermont total cases
-    stateTotalCount42.textContent = data[42].total_cases;
-
-    // Vermont new cases
-    stateNewCases42.textContent = data[42].new_cases;
-
-    // Vermont new deaths
-    stateNewDeaths42.textContent = data[42].new_deaths;
-
-    // Vermont active cases
-    stateDeathCount42.textContent = data[42].total_deaths;
-
-    // Vermont last date record
-    stateRecordDate42.textContent = data[42].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // New Hampshire last date record
+  //  stateRecordDate41.textContent = data[41].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Maine ------------------------------
+     // Vermont ------------------------------
 
-    // Maine state name
-    stateName43.textContent = data[43].state_name;
+     // Vermont state name
+   stateName42.textContent = data[42].state_name;
+        
+   // Vermont total cases
+   stateTotalCount42.textContent = data[42].total_cases;
 
-    // Maine total cases
-    stateTotalCount43.textContent = data[43].total_cases;
+   // Vermont new cases
+   stateNewCases42.textContent = data[42].new_cases;
 
-    // Maine new cases
-    stateNewCases43.textContent = data[43].new_cases;
+   // Vermont new deaths
+   stateNewDeaths42.textContent = data[42].new_deaths;
 
-    // Maine new deaths
-    stateNewDeaths43.textContent = data[43].new_deaths;
+   // Vermont active cases
+   stateDeathCount42.textContent = data[42].total_deaths;
 
-    // Maine active cases
-    stateDeathCount43.textContent = data[43].total_deaths;
-
-    // Maine last date record
-    stateRecordDate43.textContent = data[43].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Vermont last date record
+  //  stateRecordDate42.textContent = data[42].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Nebraska ------------------------------
+     // Maine ------------------------------
+
+     // Maine state name
+   stateName43.textContent = data[43].state_name;
+        
+   // Maine total cases
+   stateTotalCount43.textContent = data[43].total_cases;
+
+   // Maine new cases
+   stateNewCases43.textContent = data[43].new_cases;
+
+   // Maine new deaths
+   stateNewDeaths43.textContent = data[43].new_deaths;
+
+   // Maine active cases
+   stateDeathCount43.textContent = data[43].total_deaths;
+
+   // Maine last date record
+  //  stateRecordDate43.textContent = data[43].record_date.substr(5, 5).replace("-","/") + "/2020";
+
+
+     // Nebraska ------------------------------
 
     // Nebraska state name
     stateName44.textContent = data[44].state_name;
-
+        
     // Nebraska total cases
     stateTotalCount44.textContent = data[44].total_cases;
-
+ 
     // Nebraska new cases
     stateNewCases44.textContent = data[44].new_cases;
-
+ 
     // Nebraska new deaths
     stateNewDeaths44.textContent = data[44].new_deaths;
-
+ 
     // Nebraska active cases
     stateDeathCount44.textContent = data[44].total_deaths;
-
+ 
     // Nebraska last date record
-    stateRecordDate44.textContent = data[44].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate44.textContent = data[44].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // West Virgina ------------------------------
+     // West Virgina ------------------------------
 
-    // West Virgina state name
-    stateName45.textContent = data[45].state_name;
+     // West Virgina state name
+   stateName45.textContent = data[45].state_name;
+        
+   // West Virgina total cases
+   stateTotalCount45.textContent = data[45].total_cases;
 
-    // West Virgina total cases
-    stateTotalCount45.textContent = data[45].total_cases;
+   // West Virgina new cases
+   stateNewCases45.textContent = data[45].new_cases;
 
-    // West Virgina new cases
-    stateNewCases45.textContent = data[45].new_cases;
+   // West Virgina new deaths
+   stateNewDeaths45.textContent = data[45].new_deaths;
 
-    // West Virgina new deaths
-    stateNewDeaths45.textContent = data[45].new_deaths;
+   // West Virgina active cases
+   stateDeathCount45.textContent = data[45].total_deaths;
 
-    // West Virgina active cases
-    stateDeathCount45.textContent = data[45].total_deaths;
-
-    // West Virgina last date record
-    stateRecordDate45.textContent = data[45].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // West Virgina last date record
+  //  stateRecordDate45.textContent = data[45].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // Hawaii ------------------------------
+     // Hawaii ------------------------------
 
     // Hawaii state name
     stateName46.textContent = data[46].state_name;
-
+        
     // Hawaii total cases
     stateTotalCount46.textContent = data[46].total_cases;
-
+ 
     // Hawaii new cases
     stateNewCases46.textContent = data[46].new_cases;
-
+ 
     // Hawaii new deaths
     stateNewDeaths46.textContent = data[46].new_deaths;
-
+ 
     // Hawaii active cases
     stateDeathCount46.textContent = data[46].total_deaths;
-
+ 
     // Hawaii last date record
-    stateRecordDate46.textContent = data[46].record_date.substr(5, 5).replace("-", "/") + "/2020";
+    // stateRecordDate46.textContent = data[46].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // South Dakota ------------------------------
+     // South Dakota ------------------------------
 
-    // South Dakota state name
-    stateName47.textContent = data[47].state_name;
+     // South Dakota state name
+   stateName47.textContent = data[47].state_name;
+        
+   // South Dakota total cases
+   stateTotalCount47.textContent = data[47].total_cases;
 
-    // South Dakota total cases
-    stateTotalCount47.textContent = data[47].total_cases;
+   // South Dakota new cases
+   stateNewCases47.textContent = data[47].new_cases;
 
-    // South Dakota new cases
-    stateNewCases47.textContent = data[47].new_cases;
+   // South Dakota new deaths
+   stateNewDeaths47.textContent = data[47].new_deaths;
 
-    // South Dakota new deaths
-    stateNewDeaths47.textContent = data[47].new_deaths;
+   // South Dakota active cases
+   stateDeathCount47.textContent = data[47].total_deaths;
 
-    // South Dakota active cases
-    stateDeathCount47.textContent = data[47].total_deaths;
-
-    // South Dakota last date record
-    stateRecordDate47.textContent = data[47].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Montana ------------------------------
-
-    // Montana state name
-    stateName48.textContent = data[48].state_name;
-
-    // Montana total cases
-    stateTotalCount48.textContent = data[48].total_cases;
-
-    // Montana new cases
-    stateNewCases48.textContent = data[48].new_cases;
-
-    // Montana new deaths
-    stateNewDeaths48.textContent = data[48].new_deaths;
-
-    // Montana active cases
-    stateDeathCount48.textContent = data[48].total_deaths;
-
-    // Montana last date record
-    stateRecordDate48.textContent = data[48].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // South Dakota last date record
+  //  stateRecordDate47.textContent = data[47].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
-    // North Dakota ------------------------------
+     // Montana ------------------------------
 
-    // North Dakota state name
-    stateName49.textContent = data[49].state_name;
+     // Montana state name
+   stateName48.textContent = data[48].state_name;
+        
+   // Montana total cases
+   stateTotalCount48.textContent = data[48].total_cases;
 
-    // North Dakota total cases
-    stateTotalCount49.textContent = data[49].total_cases;
+   // Montana new cases
+   stateNewCases48.textContent = data[48].new_cases;
 
-    // North Dakota new cases
-    stateNewCases49.textContent = data[49].new_cases;
+   // Montana new deaths
+   stateNewDeaths48.textContent = data[48].new_deaths;
 
-    // North Dakota new deaths
-    stateNewDeaths49.textContent = data[49].new_deaths;
+   // Montana active cases
+   stateDeathCount48.textContent = data[48].total_deaths;
 
-    // North Dakota active cases
-    stateDeathCount49.textContent = data[49].total_deaths;
-
-    // North Dakota last date record
-    stateRecordDate49.textContent = data[49].record_date.substr(5, 5).replace("-", "/") + "/2020";
-
-
-    // Wyoming ------------------------------
-
-    // Wyoming state name
-    stateName50.textContent = data[50].state_name;
-
-    // Wyoming total cases
-    stateTotalCount50.textContent = data[50].total_cases;
-
-    // Wyoming new cases
-    stateNewCases50.textContent = data[50].new_cases;
-
-    // Wyoming new deaths
-    stateNewDeaths50.textContent = data[50].new_deaths;
-
-    // Wyoming active cases
-    stateDeathCount50.textContent = data[50].total_deaths;
-
-    // Wyoming last date record
-    stateRecordDate50.textContent = data[50].record_date.substr(5, 5).replace("-", "/") + "/2020";
+   // Montana last date record
+  //  stateRecordDate48.textContent = data[48].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
+     // North Dakota ------------------------------
+
+     // North Dakota state name
+   stateName49.textContent = data[49].state_name;
+        
+   // North Dakota total cases
+   stateTotalCount49.textContent = data[49].total_cases;
+
+   // North Dakota new cases
+   stateNewCases49.textContent = data[49].new_cases;
+
+   // North Dakota new deaths
+   stateNewDeaths49.textContent = data[49].new_deaths;
+
+   // North Dakota active cases
+   stateDeathCount49.textContent = data[49].total_deaths;
+
+   // North Dakota last date record
+  //  stateRecordDate49.textContent = data[49].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
+     // Wyoming ------------------------------
 
+     // Wyoming state name
+   stateName50.textContent = data[50].state_name;
+        
+   // Wyoming total cases
+   stateTotalCount50.textContent = data[50].total_cases;
 
+   // Wyoming new cases
+   stateNewCases50.textContent = data[50].new_cases;
 
+   // Wyoming new deaths
+   stateNewDeaths50.textContent = data[50].new_deaths;
 
+   // Wyoming active cases
+   stateDeathCount50.textContent = data[50].total_deaths;
 
+   // Wyoming last date record
+  //  stateRecordDate50.textContent = data[50].record_date.substr(5, 5).replace("-","/") + "/2020";
 
 
 
   })
 
   .catch(err => {
-    console.log(err);
+  console.log(err);
   });
 
-window.onload = () => {
-  const submitButton = document.querySelector("#submitBtn")
-  submitButton.addEventListener("click", submit)
-}
-
-function submit(event) {
-  event.preventDefault();
-
-  const searchTerm = document.querySelector("#inputSearchedTerm");
-  const results = document.querySelector("#results");
-
-  const url = "https://api.data.charitynavigator.org/v2/organizations?app_id=f9ce292a&app_key=f0df724ada7935a5f444907c85fad917"
-    + "&zip=" + searchTerm.value;
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
+  window.onload = () => {
+    const submitButton = document.querySelector("#submitBtn")
+    submitButton.addEventListener("click", submit)
+  }
+  
+  function submit(event) {
+    event.preventDefault();
+  
+    const searchTerm = document.querySelector("#inputSearchedTerm");
+    const results = document.querySelector("#results");
+  
+    const url ="https://api.data.charitynavigator.org/v2/Organizations?app_id=f9ce292a&app_key=f0df724ada7935a5f444907c85fad917&search=%22medical%22%2C%20%22health%22%2C%20%22mental%22"
+        + "&city=" + searchTerm.value;
+  
+    fetch(url)
+    .then (response=> response.json())
+    .then (data => {
       console.log(data)
-
+  
       // KEYWORDS TO NARROW DOWN THE SEARCH
-
-      var keywords = ["Health", "Community"]
-      var debug = false;
-
-
-      for (let i = 0; i < data.length; i++) {
-        const charity = data[i]
-        const name = charity.charityName;
-        let website = charity.websiteURL;
-        let type = charity.irsClassification.nteeType;
-
-        for (let j = 0; j < keywords.length; j++) {
-          keyword = keywords[j];
-          if (name.indexOf(keyword) !== -1 || debug === true) {
-
-            const address = charity.mailingAddress.streetAddress1 + "&nbsp" + charity.mailingAddress.city + "&nbsp" + charity.mailingAddress.postalCode;
-
-
-            if (!website) {
-              website = ""
-            }
-            if (!type) {
-              type = ""
-            }
-
-
-
-            const card = document.createElement("div");
-            card.className = "callout"
-            card.innerHTML = `
+  
+        var keywords = ["Health", "Medical"]
+  var debug =false;
+        
+  
+        for (let i=0; i < data.length; i++) {
+            const charity = data[i]
+            const name = charity.charityName;
+            let website = charity.websiteURL;
+            let type = charity.irsClassification.nteeType;
+          
+              for (let j=0; j<keywords.length; j++) {
+                  keyword= keywords[j];
+                      if (name.indexOf(keyword)!== -1 || debug===true) {
+                         
+                          const address = charity.mailingAddress.streetAddress1 + "&nbsp" + charity.mailingAddress.city + "&nbsp" + charity.mailingAddress.postalCode;
+                          
+  
+                          if(!website) {
+                              website=""
+                          }
+                          if(!type) {
+                              type=""
+                          }
+                      
+                  
+  
+                          const card = document.createElement("div");
+                          card.className = "callout"
+                          card.innerHTML = `
                               <h6>${name}</h6>
                               <h7>${type}</h7>
                               ${website ? `<h7>${website}</h7>` : ''}
                               <h7>${address}</h7>
                           `
-            results.append(card);
-            break;
-          }
+                          results.append(card);  
+                          break;
+                      } 
+              }
+            
+       
+           
+        
         }
-
-
-
-
-      }
     })
-}
+  }
 // }
 
