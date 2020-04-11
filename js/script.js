@@ -1,5 +1,8 @@
 // VARIABLES
 
+// Color changing variables
+accordionButtons = document.querySelector("accordion-item");
+
 // USA Totals Variables
 usaTotalCases = document.getElementById("usaTotalCases");
 usaTotalDeaths = document.getElementById("TotalDeaths");
@@ -479,7 +482,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
   .then((data) => {
     console.log(data);
     // us overall info
-    console.log(data[0]);
+    
 
     // USA Totals
     // USA Totals Cases
@@ -1553,6 +1556,59 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
 
 
 
+
+    // if (totalValue > 10000) {
+    //   totalDiv.classList.add("severe");
+      
+    // } else if ((totalValue < 10000 && totalValue > 5000)){
+    //   totalDiv.classList.add("high");
+      
+    // } else if ((totalValue < 5000 && totalValue > 2500)){
+    //   totalDiv.classList.add("medium");
+      
+    // } else if ((totalValue < 2500 && totalValue > 1000)) {
+    // totalDiv.classList.add("low");
+
+    // } else if ((totalValue > 1000)) {
+    // totalDiv.classList.add("very-low");
+    // }
+    // Color changing function
+
+    totals = document.querySelector(".totals")
+    
+
+    console.log(totals.value)
+
+    
+     if (data.total_cases > 10000) {
+        //  change red
+        accordionButtons.style.backgroundColor = "rgb(219, 26, 26)";
+        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+
+     } else if (data.total_cases < 10000 && data.total_cases > 5000) {
+        // change orange
+        accordionButtons.style.backgroundColor = "rgb(219, 99, 30)";
+        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+
+     } else if (data.total_cases < 5000 && data.total_cases > 2500) {
+        //  change yellow
+        accordionButtons.style.backgroundColor = "rgb(243, 224, 55)";
+        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+
+     } else if (data.total_cases < 2500 && data.total_cases > 1000) {
+        //  change green
+        accordionButtons.style.backgroundColor = "rgb(121, 173, 36)";
+        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+
+     } else if (data.total_cases > 1000) {
+      //  change green
+      accordionButtons.style.backgroundColor = "rgb(176, 224, 97)";
+      accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+
+   }
+     
+
+
   })
 
   .catch(err => {
@@ -1638,41 +1694,41 @@ console.log(stateTotalCount1.textContent);
 
 
 
-// set a variable to all divs with the row class
-const totalDiv = $("div.totals");
-// create a variable with the value of the current our using Moment.js
-let totalValue = total.value;
+// // set a variable to all divs with the row class
+// const totalDiv = $("div.totals");
+// // create a variable with the value of the current our using Moment.js
+// let totalValue = total.value;
 
-// user Array.from to create an array from the rows which we are iterating through with the forEach method
-Array.from(totalDivs).forEach(function(totalDiv) {
-// here the specific ids set one each row is set to the variable rowId
-let
-totalId = total.id,
-if (totalId) {
-// store the parsed row id into the rowHour variable
-totalRow = parseInt(totalId);
-  }
-  if (totalRow) {
-// We compare the row id to current hour, and the specific row to the correct "color" class
-// Used vanilla javascript as it was too difficult to use jquery change the row parameter
-      if (totalValue > 10000) {
-        totalDiv.classList.add("severe");
+// // user Array.from to create an array from the rows which we are iterating through with the forEach method
+// Array.from(totalDivs).forEach(function(totalDiv) {
+// // here the specific ids set one each row is set to the variable rowId
+// let
+// totalId = total.id,
+// if (totalId) {
+// // store the parsed row id into the rowHour variable
+// totalRow = parseInt(totalId);
+//   }
+//   if (totalRow) {
+// // We compare the row id to current hour, and the specific row to the correct "color" class
+// // Used vanilla javascript as it was too difficult to use jquery change the row parameter
+//       if (totalValue > 10000) {
+//         totalDiv.classList.add("severe");
         
-      } else if ((totalValue < 10000 && totalValue > 5000)){
-        totalDiv.classList.add("high");
+//       } else if ((totalValue < 10000 && totalValue > 5000)){
+//         totalDiv.classList.add("high");
         
-      } else if ((totalValue < 5000 && totalValue > 2500)){
-        totalDiv.classList.add("medium");
+//       } else if ((totalValue < 5000 && totalValue > 2500)){
+//         totalDiv.classList.add("medium");
         
-      } else if ((totalValue < 2500 && totalValue > 1000)) {
-      totalDiv.classList.add("low");
+//       } else if ((totalValue < 2500 && totalValue > 1000)) {
+//       totalDiv.classList.add("low");
 
-      } else if ((totalValue > 1000)) {
-      totalDiv.classList.add("very-low");
-      }
+//       } else if ((totalValue > 1000)) {
+//       totalDiv.classList.add("very-low");
+//       }
 
-  }
-});
+//   }
+// });
 
 
 // $("div.totals").each(function() {
