@@ -21,6 +21,7 @@
   
 
   ul {
+    margin-top: 8rem;
     box-shadow: 1px 1px 3px 4px #ccc;
     border-radius: 3px;
   }
@@ -46,7 +47,7 @@
   
 
   .header {
-    height: 85vh;
+    height: 65vh;
     width: 100%;
     background-image: linear-gradient(
       to right bottom,
@@ -56,8 +57,6 @@
     background-size: cover;
     background-position: top;
     position: relative;
-
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
 
 .text-box {
