@@ -3262,6 +3262,15 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .card-section > :last-child {
     margin-bottom: 0; }
 
+.card-divider-background {
+background-color: darkred;
+text-align: center;
+}
+
+.usa-total-stats {
+background-color: darkgray;
+}
+
 .card-image {
   min-height: 1px; }
 
