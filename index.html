@@ -5,60 +5,60 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Covid-19 App</title>
+  <title>The Covid-19 Relief Initiative || Helping your local communities in times of need</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet"> 
 
 </head>
 
 <body>
-  <!-- Title section -->
   <section>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
-        <div class="large-12 cell">
-          <h1>Covid-19 Donation App</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- US Total Stats -->
-  <section>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
-        <div class="large-12 cell">
-        </div>
-        <div class="card" style="width: 300px;">
-          <div class="card-divider text-center">
-            <h4 class="text-center">U.S.A. Covid-19 Stats </h4>
-          </div>
-          <img src=".//assets/covid19.jpg">
-          <div class="card-section">
-            <p>
-              <div class="grid-x">
-                <div id="TotalCases" class="cell large-auto">Total Cases</div>
-                <div id="ActiveCases" class="cell large-auto">Active Cases</div>
-                <div id="Deaths" class="cell large-auto">Total Deaths</div>
-                <div id="newCases" class="cell large-auto">New Cases Daily</div>
-                <div id="newDeaths" class="cell large-auto">New Deaths Daily</div>
-                <div id="LatestDate" class="cell large-auto">Last Update</div>
+    <header class="header">
+      <div class="text-box">
+        <h1 class="heading-primary text-center">
+          <span class="heading-primary-main">The Covid-19 Relief Initiative</span>
+          <span class="heading-primary-sub">Helping your local communities in times of need</span>
+        </h1>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
+            
+            <div class="large-12 cell">
+            </div>
+            
+            <div class="card us-stats" style="width: 300px;">
+              <h4 class="text-center us-info-header h4-header styling">The current situation in the US</h4>
+              
+              <div class="card-section">
+                <p>
+                  <div class="grid-x us-stats-title">
+                    <div id="TotalCases" class="cell large-auto">Total Cases</div>
+                    <div id="ActiveCases" class="cell large-auto">Active Cases</div>
+                    <div id="Deaths" class="cell large-auto">Total Deaths</div>
+                    <div id="newCases" class="cell large-auto">New Deaths</div>
+                    <div id="newDeaths" class="cell large-auto">New Cases</div>
+                    <div id="LatestDate" class="cell large-auto">Last Update</div>
+                  </div>
+                  <hr>
+                  <!-- USA Total Values -->
+                  <div class="grid-x">
+                    <div id="usaTotalCases" class="cell large-auto">One</div>
+                    <div id="TotalActiveCases" class="cell large-auto">Two</div>
+                    <div id="TotalDeaths" class="cell large-auto">Three</div>
+                    <div id="newDailyCases" class="cell large-auto">Four</div>
+                    <div id="newDailyDeaths" class="cell large-auto">Five</div>
+                    <div id="usaLatestDate" class="cell large-auto">Six</div>
+                  </div>
+                </p>
               </div>
-              <hr>
-              <!-- USA Total Values -->
-              <div class="grid-x">
-                <div id="usaTotalCases" class="cell large-auto">One</div>
-                <div id="TotalActiveCases" class="cell large-auto">Two</div>
-                <div id="TotalDeaths" class="cell large-auto">Three</div>
-                <div id="newDailyCases" class="cell large-auto">Four</div>
-                <div id="newDailyDeaths" class="cell large-auto">Five</div>
-                <div id="usaLatestDate" class="cell large-auto">Six</div>
-              </div>
-            </p>
+            </div>
           </div>
         </div>
-      </div>
     </div>
+    </header>
+   
+   
   </section>
 
   <section>
@@ -95,25 +95,23 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x text-center">
         <div class="large-12">
-          <ul class="accordion" data-accordion data-multi-expand="true" style="height: 770px; overflow-y: auto;">
+          <ul class="accordion" data-accordion data-multi-expand="true" style="height: 67vh; overflow-y: auto;">
             <!-- 1st State Info -->
-
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="1" data-accordion-item>
                 <a href="#" id="state-name-1" class="accordion-title"></a>
-              
                 <div class="accordion-content" data-tab-content>
                   <table class="table-scroll stack">
                     <thead>
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-1">State total cases number</td>
+                        <td class="totals" id="state-total-1">State total cases number</td>
                         <td id="state-death-1">State total death number</td>
                         <td id="new-state-cases-1">State Name 1</td>
                         <td id="new-state-deaths-1">State total cases number</td>
@@ -122,7 +120,7 @@
                 </div>
               </li>
               <!-- 2nd State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="2" data-accordion-item>
                 <a href="#" id="state-name-2" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -131,13 +129,13 @@
                       <tr></tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-2">State total cases number</td>
+                        <td class="total" class="totals" id="state-total-2">State total cases number</td>
                         <td id="state-death-2">State total death number</td>
                         <td id="new-state-cases-2">State Name 2</td>
                         <td id="new-state-deaths-2">State total cases number</td>
@@ -146,7 +144,7 @@
                 </div>
               </li>
                 <!-- 3rd State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-3" class="accordion-title"></a>
                   
                   <div class="accordion-content" data-tab-content>
@@ -155,13 +153,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-3">State total cases number</td>
+                          <td class="totals" id="state-total-3">State total cases number</td>
                           <td id="state-death-3">State total death number</td>
                           <td id="new-state-cases-3">State Name 3</td>
                           <td id="new-state-deaths-3">State total cases number</td>
@@ -170,7 +168,7 @@
                   </div>
                 </li>
                   <!-- 4th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-4" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -179,13 +177,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-4">State total cases number</td>
+                        <td class="totals" id="state-total-4">State total cases number</td>
                         <td id="state-death-4">State total death number</td>
                         <td id="new-state-cases-4">State Name 4</td>
                         <td id="new-state-deaths-4">State total cases number</td>
@@ -194,7 +192,7 @@
                 </div>
               </li>
                 <!-- 5th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-5" class="accordion-title"></a>
                   
                   <div class="accordion-content" data-tab-content>
@@ -203,13 +201,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-5">State total cases number</td>
+                          <td class="totals" id="state-total-5">State total cases number</td>
                           <td id="state-death-5">State total death number</td>
                           <td id="new-state-cases-5">State Name 5</td>
                           <td id="new-state-deaths-5">State total cases number</td>
@@ -218,7 +216,7 @@
                   </div>
                 </li>
                   <!-- 6th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-6" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -227,13 +225,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-6">State total cases number</td>
+                        <td class="totals" id="state-total-6">State total cases number</td>
                         <td id="state-death-6">State total death number</td>
                         <td id="new-state-cases-6">State Name 6</td>
                         <td id="new-state-deaths-6">State total cases number</td>
@@ -242,7 +240,7 @@
                 </div>
               </li>
                 <!-- 7th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                    <a href="#" id="state-name-7" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -251,13 +249,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-7">State total cases number</td>
+                        <td class="totals" id="state-total-7">State total cases number</td>
                         <td id="state-death-7">State total death number</td>
                         <td id="new-state-cases-7">State Name 7</td>
                         <td id="new-state-deaths-7">State total cases number</td>
@@ -266,7 +264,7 @@
                 </div>
                 </li>
                   <!-- 8th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-8" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -275,13 +273,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-8">State total cases number</td>
+                        <td class="totals" id="state-total-8">State total cases number</td>
                         <td id="state-death-8">State total death number</td>
                         <td id="new-state-cases-8">State Name 8</td>
                         <td id="new-state-deaths-8">State total cases number</td>
@@ -290,7 +288,7 @@
                 </div>
               </li>
                 <!-- 9th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-9" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -299,13 +297,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-9">State total cases number</td>
+                          <td class="totals" id="state-total-9">State total cases number</td>
                           <td id="state-death-9">State total death number</td>
                           <td id="new-state-cases-9">State Name 9</td>
                           <td id="new-state-deaths-9">State total cases number</td>
@@ -314,7 +312,7 @@
                   </div>
                 </li>
                   <!-- 10th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-10" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -323,13 +321,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-10">State total cases number</td>
+                        <td class="totals" id="state-total-10">State total cases number</td>
                         <td id="state-death-10">State total death number</td>
                         <td id="new-state-cases-10">State Name 10</td>
                         <td id="new-state-deaths-10">State total cases number</td>
@@ -338,7 +336,7 @@
                 </div>
               </li>
                 <!-- 11th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-11" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -347,13 +345,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-11">State total cases number</td>
+                          <td class="totals" id="state-total-11">State total cases number</td>
                           <td id="state-death-11">State total death number</td>
                           <td id="new-state-cases-11">State Name 11</td>
                           <td id="new-state-deaths-11">State total cases number</td>
@@ -362,7 +360,7 @@
                   </div>
                 </li>
                   <!-- 12th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-12" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -371,13 +369,13 @@
                       <tr>
                         <th class="text-center">Total Cases</th>
                         <th class="text-center">Total Deaths</th>
-                        <th class="text-center">New Cases</th>
                         <th class="text-center">New Deaths</th>
+                        <th class="text-center">New Cases</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td id="state-total-12">State total cases number</td>
+                        <td class="totals" id="state-total-12">State total cases number</td>
                         <td id="state-death-12">State total death number</td>
                         <td id="new-state-cases-12">State Name 12</td>
                         <td id="new-state-deaths-12">State total cases number</td>
@@ -386,7 +384,7 @@
                 </div>
               </li>
                 <!-- 13th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-13" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -395,13 +393,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-13">State total cases number</td>
+                          <td class="totals" id="state-total-13">State total cases number</td>
                           <td id="state-death-13">State total death number</td>
                           <td id="new-state-cases-13">State Name 13</td>
                           <td id="new-state-deaths-13">State total cases number</td>
@@ -410,7 +408,7 @@
                   </div>
                 </li>
                   <!-- 14th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-14" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -419,13 +417,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-14">State total cases number</td>
+                          <td class="totals" id="state-total-14">State total cases number</td>
                           <td id="state-death-14">State total death number</td>
                           <td id="new-state-cases-14">State Name 14</td>
                           <td id="new-state-deaths-14">State total cases number</td>
@@ -434,7 +432,7 @@
                   </div>
               </li>
                 <!-- 15 State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-15" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -443,13 +441,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-15">State total cases number</td>
+                          <td class="totals" id="state-total-15">State total cases number</td>
                           <td id="state-death-15">State total death number</td>
                           <td id="new-state-cases-15">State Name 15</td>
                           <td id="new-state-deaths-15">State total cases number</td>
@@ -458,7 +456,7 @@
                   </div>
                 </li>
                   <!-- 16th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-16" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -467,13 +465,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-16">State total cases number</td>
+                          <td class="totals" id="state-total-16">State total cases number</td>
                           <td id="state-death-16">State total death number</td>
                           <td id="new-state-cases-16">State Name 16</td>
                           <td id="new-state-deaths-16">State total cases number</td>
@@ -482,7 +480,7 @@
                   </div>
               </li>
                    <!-- 17th State Info -->
-                   <li class="accordion-item" data-accordion-item>
+                   <li class="accordion-item" id="" data-accordion-item>
                     <a href="#" id="state-name-17" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -491,13 +489,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-17">State total cases number</td>
+                          <td class="totals" id="state-total-17">State total cases number</td>
                           <td id="state-death-17">State total death number</td>
                           <td id="new-state-cases-17">State Name 17</td>
                           <td id="new-state-deaths-17">State total cases number</td>
@@ -506,7 +504,7 @@
                   </div>
                   </li>
                        <!-- 18th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-18" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -515,13 +513,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-18">State total cases number</td>
+                          <td class="totals" id="state-total-18">State total cases number</td>
                           <td id="state-death-18">State total death number</td>
                           <td id="new-state-cases-18">State Name 18</td>
                           <td id="new-state-deaths-18">State total cases number</td>
@@ -530,7 +528,7 @@
                   </div>
               </li>
                    <!-- 19th State Info -->
-                   <li class="accordion-item" data-accordion-item>
+                   <li class="accordion-item" id="" data-accordion-item>
                     <a href="#" id="state-name-19" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -539,13 +537,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-19">State total cases number</td>
+                          <td class="totals" id="state-total-19">State total cases number</td>
                           <td id="state-death-19">State total death number</td>
                           <td id="new-state-cases-19">State Name 19</td>
                           <td id="new-state-deaths-19">State total cases number</td>
@@ -554,7 +552,7 @@
                   </div>
                   </li>
                   <!-- 20th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-20" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -563,13 +561,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-20">State total cases number</td>
+                          <td class="totals" id="state-total-20">State total cases number</td>
                           <td id="state-death-20">State total death number</td>
                           <td id="new-state-cases-20">State Name 20</td>
                           <td id="new-state-deaths-20">State total cases number</td>
@@ -578,7 +576,7 @@
                   </div>
               </li>
                        <!-- 21st State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-21" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -587,13 +585,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-21">State total cases number</td>
+                          <td class="totals" id="state-total-21">State total cases number</td>
                           <td id="state-death-21">State total death number</td>
                           <td id="new-state-cases-21">State Name 21</td>
                           <td id="new-state-deaths-21">State total cases number</td>
@@ -602,7 +600,7 @@
                   </div>
               </li>
                 <!-- 22nd State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-22" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -611,13 +609,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-22">State total cases number</td>
+                          <td class="totals" id="state-total-22">State total cases number</td>
                           <td id="state-death-22">State total death number</td>
                           <td id="new-state-cases-22">State Name 22</td>
                           <td id="new-state-deaths-22">State total cases number</td>
@@ -626,7 +624,7 @@
                   </div>
                 </li>
                   <!-- 23rd State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-23" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -635,13 +633,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-23">State total cases number</td>
+                          <td class="totals" id="state-total-23">State total cases number</td>
                           <td id="state-death-23">State total death number</td>
                           <td id="new-state-cases-23">State Name 23</td>
                           <td id="new-state-deaths-23">State total cases number</td>
@@ -650,7 +648,7 @@
                   </div>
               </li>
                 <!-- 24th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-24" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -659,13 +657,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-24">State total cases number</td>
+                          <td class="totals" id="state-total-24">State total cases number</td>
                           <td id="state-death-24">State total death number</td>
                           <td id="new-state-cases-24">State Name 24</td>
                           <td id="new-state-deaths-24">State total cases number</td>
@@ -674,7 +672,7 @@
                   </div>
                 </li>
                   <!-- 25th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-25" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -683,13 +681,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-25">State total cases number</td>
+                          <td class="totals" id="state-total-25">State total cases number</td>
                           <td id="state-death-25">State total death number</td>
                           <td id="new-state-cases-25">State Name 25</td>
                           <td id="new-state-deaths-25">State total cases number</td>
@@ -698,7 +696,7 @@
                   </div>
               </li>
                 <!-- 26th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-26" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -707,13 +705,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-26">State total cases number</td>
+                          <td class="totals" id="state-total-26">State total cases number</td>
                           <td id="state-death-26">State total death number</td>
                           <td id="new-state-cases-26">State Name 26</td>
                           <td id="new-state-deaths-26">State total cases number</td>
@@ -722,7 +720,7 @@
                   </div>
                 </li>
                   <!-- 27th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-27" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -731,13 +729,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-27">State total cases number</td>
+                          <td class="totals" id="state-total-27">State total cases number</td>
                           <td id="state-death-27">State total death number</td>
                           <td id="new-state-cases-27">State Name 27</td>
                           <td id="new-state-deaths-27">State total cases number</td>
@@ -746,7 +744,7 @@
                   </div>
               </li>
                 <!-- 28th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-28" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -755,13 +753,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-28">State total cases number</td>
+                          <td class="totals" id="state-total-28">State total cases number</td>
                           <td id="state-death-28">State total death number</td>
                           <td id="new-state-cases-28">State Name 28</td>
                           <td id="new-state-deaths-28">State total cases number</td>
@@ -770,7 +768,7 @@
                   </div>
                 </li>
                   <!-- 29th State Info -->
-              <li class="accordion-item" data-accordion-item>
+              <li class="accordion-item" id="" data-accordion-item>
                 <a href="#" id="state-name-29" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -779,13 +777,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-29">State total cases number</td>
+                          <td class="totals" id="state-total-29">State total cases number</td>
                           <td id="state-death-29">State total death number</td>
                           <td id="new-state-cases-29">State Name 29</td>
                           <td id="new-state-deaths-29">State total cases number</td>
@@ -794,7 +792,7 @@
                   </div>
               </li>
                 <!-- 30th State Info -->
-                <li class="accordion-item" data-accordion-item>
+                <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-30" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -803,13 +801,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-30">State total cases number</td>
+                          <td class="totals" id="state-total-30">State total cases number</td>
                           <td id="state-death-30">State total death number</td>
                           <td id="new-state-cases-30">State Name 30</td>
                           <td id="new-state-deaths-30">State total cases number</td>
@@ -818,7 +816,7 @@
                   </div>
                 </li>
                  <!-- 31st State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-31" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -827,13 +825,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-31">State total cases number</td>
+                          <td class="totals" id="state-total-31">State total cases number</td>
                           <td id="state-death-31">State total death number</td>
                           <td id="new-state-cases-31">State Name 31</td>
                           <td id="new-state-deaths-31">State total cases number</td>
@@ -842,7 +840,7 @@
                   </div>
                 </li>
                  <!-- 32nd State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-32" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -851,13 +849,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-32">State total cases number</td>
+                          <td class="totals" id="state-total-32">State total cases number</td>
                           <td id="state-death-32">State total death number</td>
                           <td id="new-state-cases-32">State Name 32</td>
                           <td id="new-state-deaths-32">State total cases number</td>
@@ -866,7 +864,7 @@
                   </div>
                 </li>
                  <!-- 33rd State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-33" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -875,13 +873,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-33">State total cases number</td>
+                          <td class="totals" id="state-total-33">State total cases number</td>
                           <td id="state-death-33">State total death number</td>
                           <td id="new-state-cases-33">State Name 33</td>
                           <td id="new-state-deaths-33">State total cases number</td>
@@ -890,7 +888,7 @@
                   </div>
                 </li>
                  <!-- 34th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-34" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -899,13 +897,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-34">State total cases number</td>
+                          <td class="totals" id="state-total-34">State total cases number</td>
                           <td id="state-death-34">State total death number</td>
                           <td id="new-state-cases-34">State Name 34</td>
                           <td id="new-state-deaths-34">State total cases number</td>
@@ -914,7 +912,7 @@
                   </div>
                 </li>
                  <!-- 35th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-35" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -923,13 +921,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-35">State total cases number</td>
+                          <td class="totals" id="state-total-35">State total cases number</td>
                           <td id="state-death-35">State total death number</td>
                           <td id="new-state-cases-35">State Name 35</td>
                           <td id="new-state-deaths-35">State total cases number</td>
@@ -938,7 +936,7 @@
                   </div>
                 </li>
                  <!-- 36th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-36" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -947,13 +945,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-36">State total cases number</td>
+                          <td class="totals" id="state-total-36">State total cases number</td>
                           <td id="state-death-36">State total death number</td>
                           <td id="new-state-cases-36">State Name 36</td>
                           <td id="new-state-deaths-36">State total cases number</td>
@@ -962,7 +960,7 @@
                   </div>
                 </li>
                  <!-- 37th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-37" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -971,13 +969,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-37">State total cases number</td>
+                          <td class="totals" id="state-total-37">State total cases number</td>
                           <td id="state-death-37">State total death number</td>
                           <td id="new-state-cases-37">State Name 37</td>
                           <td id="new-state-deaths-37">State total cases number</td>
@@ -986,7 +984,7 @@
                   </div>
                 </li>
                  <!-- 38th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-38" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -995,13 +993,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-38">State total cases number</td>
+                          <td class="totals" id="state-total-38">State total cases number</td>
                           <td id="state-death-38">State total death number</td>
                           <td id="new-state-cases-38">State Name 38</td>
                           <td id="new-state-deaths-38">State total cases number</td>
@@ -1010,7 +1008,7 @@
                   </div>
                 </li>
                  <!-- 39th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-39" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1019,13 +1017,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-39">State total cases number</td>
+                          <td class="totals" id="state-total-39">State total cases number</td>
                           <td id="state-death-39">State total death number</td>
                           <td id="new-state-cases-39">State Name 39</td>
                           <td id="new-state-deaths-39">State total cases number</td>
@@ -1034,7 +1032,7 @@
                   </div>
                 </li>
                  <!-- 40th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-40" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1043,13 +1041,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-40">State total cases number</td>
+                          <td class="totals" id="state-total-40">State total cases number</td>
                           <td id="state-death-40">State total death number</td>
                           <td id="new-state-cases-40">State Name 40</td>
                           <td id="new-state-deaths-40">State total cases number</td>
@@ -1058,7 +1056,7 @@
                   </div>
                 </li>
                  <!-- 41st State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-41" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1067,13 +1065,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-41">State total cases number</td>
+                          <td class="totals" id="state-total-41">State total cases number</td>
                           <td id="state-death-41">State total death number</td>
                           <td id="new-state-cases-41">State Name 41</td>
                           <td id="new-state-deaths-41">State total cases number</td>
@@ -1082,7 +1080,7 @@
                   </div>
                 </li>
                  <!-- 42nd State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-42" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1091,13 +1089,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-42">State total cases number</td>
+                          <td class="totals" id="state-total-42">State total cases number</td>
                           <td id="state-death-42">State total death number</td>
                           <td id="new-state-cases-42">State Name 42</td>
                           <td id="new-state-deaths-42">State total cases number</td>
@@ -1106,7 +1104,7 @@
                   </div>
                 </li>
                  <!-- 43rd State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-43" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1115,13 +1113,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-43">State total cases number</td>
+                          <td class="totals" id="state-total-43">State total cases number</td>
                           <td id="state-death-43">State total death number</td>
                           <td id="new-state-cases-43">State Name 43</td>
                           <td id="new-state-deaths-43">State total cases number</td>
@@ -1130,7 +1128,7 @@
                   </div>
                 </li>
                  <!-- 44th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-44" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1139,13 +1137,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-44">State total cases number</td>
+                          <td class="totals" id="state-total-44">State total cases number</td>
                           <td id="state-death-44">State total death number</td>
                           <td id="new-state-cases-44">State Name 44</td>
                           <td id="new-state-deaths-44">State total cases number</td>
@@ -1154,7 +1152,7 @@
                   </div>
                 </li>
                  <!-- 45th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item" id="" data-accordion-item>
                   <a href="#" id="state-name-45" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1163,13 +1161,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-45">State total cases number</td>
+                          <td class="totals" id="state-total-45">State total cases number</td>
                           <td id="state-death-45">State total death number</td>
                           <td id="new-state-cases-45">State Name 45</td>
                           <td id="new-state-deaths-45">State total cases number</td>
@@ -1178,7 +1176,7 @@
                   </div>
                 </li>
                  <!-- 46th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-46" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1187,13 +1185,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-46">State total cases number</td>
+                          <td class="totals" id="state-total-46">State total cases number</td>
                           <td id="state-death-46">State total death number</td>
                           <td id="new-state-cases-46">State Name 46</td>
                           <td id="new-state-deaths-46">State total cases number</td>
@@ -1202,7 +1200,7 @@
                   </div>
                 </li>
                  <!-- 47th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-47" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1211,13 +1209,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-47">State total cases number</td>
+                          <td class="totals" id="state-total-47">State total cases number</td>
                           <td id="state-death-47">State total death number</td>
                           <td id="new-state-cases-47">State Name 47</td>
                           <td id="new-state-deaths-47">State total cases number</td>
@@ -1226,7 +1224,7 @@
                   </div>
                 </li>
                  <!-- 48th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item medium" id="" data-accordion-item>
                   <a href="#" id="state-name-48" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1235,13 +1233,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-48">State total cases number</td>
+                          <td class="totals" id="state-total-48">State total cases number</td>
                           <td id="state-death-48">State total death number</td>
                           <td id="new-state-cases-48">State Name 48</td>
                           <td id="new-state-deaths-48">State total cases number</td>
@@ -1250,7 +1248,7 @@
                   </div>
                 </li>
                  <!-- 49th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item high" id="" data-accordion-item>
                   <a href="#" id="state-name-49" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1259,13 +1257,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-49">State total cases number</td>
+                          <td class="totals" id="state-total-49">State total cases number</td>
                           <td id="state-death-49">State total death number</td>
                           <td id="new-state-cases-49">State Name 49</td>
                           <td id="new-state-deaths-49">State total cases number</td>
@@ -1274,7 +1272,7 @@
                   </div>
                 </li>
                  <!-- 50th State Info -->
-                 <li class="accordion-item" data-accordion-item>
+                 <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-50" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1283,13 +1281,13 @@
                         <tr>
                           <th class="text-center">Total Cases</th>
                           <th class="text-center">Total Deaths</th>
-                          <th class="text-center">New Cases</th>
                           <th class="text-center">New Deaths</th>
+                          <th class="text-center">New Cases</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="state-total-50">State total cases number</td>
+                          <td class="totals" id="state-total-50">State total cases number</td>
                           <td id="state-death-50">State total death number</td>
                           <td id="new-state-cases-50">State Name 50</td>
                           <td id="new-state-deaths-50">State total cases number</td>
@@ -1297,10 +1295,6 @@
                     </table>
                   </div>
                 </li>
-
-
-
-
 
           </ul>
 
@@ -1323,18 +1317,12 @@
 
 
 
-
   <!-- ZIP CODE SEARCH -->
   <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-
+    <div class="grid-x grid-padding-x"></div>
       <div class="cell text-center" style="background-color:rgb(222, 222, 222)">
-    
       </div>
-
     </div>
-
-
 
     <div class="grid-x grid-padding-x">
       <div class="cell small-3">
@@ -1344,6 +1332,8 @@
         <label for="inputSearchedTerm">Search for Organizations<input id="inputSearchedTerm" type="text"
             placeholder="Enter a City or a Zip Code" aria-describedby="Enter a City Name or a Zip Code"></label>
         <button class="button" id="submitBtn">submit</button>
+        <div id="results" class="callout large" style="height: 400px; overflow-y: auto;"></div>
+
       </div>
 
       <div class="cell small-3">
@@ -1351,22 +1341,27 @@
       </div>
     </div>
 
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-3">
-      </div>
-      <div id="results" class="cell small-6">
-      </div>
-      <div class="cell small-3">
-      </div>
+    <footer>
+      <div class="grid-container fluid main-section grid-margin-y">
+        <div class="large-12 medium-8 small-12 cell">
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 medium-3 columns cell">
+  
+              </div>
+              <div class="large-5 medium-5 columns cell title text-center footer-text">
+                  <h4> About my Company </h4>
+                  <p>&copy; Copyright 2017 by Julian Dolinay, Taniesha George, and Ryan Parker.</p>
+                  <a href="http://nicesnippets.com" target="_blank" class="button">Read More</a>
+              </div>
+              <div class="large-4 medium-4 columns cell title">
+              
+              </div>
+            </div>
+        </div>
+      </footer>
+    
 
-
-    </div>
-
-  </div>
-
-
-
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/app.js"></script>
 </body>

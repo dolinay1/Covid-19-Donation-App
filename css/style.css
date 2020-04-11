@@ -11,3 +11,137 @@
     border: 1px solid black;
   } */
 
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h4 {
+    margin-top: 2rem;
+    color: rgb(243, 52, 116);
+    font-weight: 600;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+
+  ul {
+    box-shadow: 1px 1px 3px 4px #ccc;
+  }
+
+  .header {
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(213, 111, 125, 0.8),
+      rgba(213, 111, 111, 0.8)),
+     url("../assets/covid19.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+}
+
+.text-box {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 15px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+
+}
+
+.footer-text {
+  color: rgb(243, 52, 116);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.us-stats-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+thead {
+  background-color: rgb(47, 48, 45);
+  color: rgb(243, 52, 116);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.us-stats {
+  background-color: rgb(67, 68, 64);
+  color: rgb(243, 52, 116);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+tbody {
+  background-color: rgb(67, 68, 64);
+  color: rgb(243, 52, 116);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.us-info-header {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Key color */
+.severe {
+  background-color: rgb(219, 26, 26)
+}
+
+.high {
+  background-color: rgb(219, 99, 30)
+}
+
+.medium {
+  background-color: rgb(243, 224, 55)
+}
+
+.low {
+  background-color: rgb(121, 173, 36)
+}
+
+.very-low {
+  background-color: rgb(176, 224, 97)
+}
+
+.accordion-title {
+  color: black;
+  font-size: 16px;
+}
+
+
+li {
+  margin-top: 4px;
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: rgb(55, 56, 53);
+}
