@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local Relief App</title>
+  <title>The Covid-19 Relief Initiative || Helping your local communities in times of need</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
@@ -14,58 +14,51 @@
 </head>
 
 <body>
-  <!-- Title section -->
-  <!-- <section>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
-        <div class="large-12 cell">
-          <h1>Local</h1>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- US Total Stats -->
   <section>
-    <div class="cell hero">
-      
-    </div>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
-        
-        <div class="large-12 cell">
-        </div>
-        
-        <div class="card" style="width: 300px;">
-          <div class="card-divider text-center">
-            <h4 class="text-center">U.S.A. Covid-19 Stats </h4>
-          </div>
-          
-          <div class="card-section">
-            <p>
-              <div class="grid-x">
-                <div id="TotalCases" class="cell large-auto">Total Cases</div>
-                <div id="ActiveCases" class="cell large-auto">Active Cases</div>
-                <div id="Deaths" class="cell large-auto">Total Deaths</div>
-                <div id="newCases" class="cell large-auto">New Death sDaily</div>
-                <div id="newDeaths" class="cell large-auto">New Cases Daily</div>
-                <div id="LatestDate" class="cell large-auto">Last Update</div>
+    <header class="header">
+      <div class="text-box">
+        <h1 class="heading-primary text-center">
+          <span class="heading-primary-main">The Covid-19 Relief Initiative</span>
+          <span class="heading-primary-sub">Helping your local communities in times of need</span>
+        </h1>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x grid-padding-y grid-margin-y text-center">
+            
+            <div class="large-12 cell">
+            </div>
+            
+            <div class="card us-stats" style="width: 300px;">
+              <h4 class="text-center us-info-header h4-header styling">The current situation in the US</h4>
+              
+              <div class="card-section">
+                <p>
+                  <div class="grid-x us-stats-title">
+                    <div id="TotalCases" class="cell large-auto">Total Cases</div>
+                    <div id="ActiveCases" class="cell large-auto">Active Cases</div>
+                    <div id="Deaths" class="cell large-auto">Total Deaths</div>
+                    <div id="newCases" class="cell large-auto">New Deaths</div>
+                    <div id="newDeaths" class="cell large-auto">New Cases</div>
+                    <div id="LatestDate" class="cell large-auto">Last Update</div>
+                  </div>
+                  <hr>
+                  <!-- USA Total Values -->
+                  <div class="grid-x">
+                    <div id="usaTotalCases" class="cell large-auto">One</div>
+                    <div id="TotalActiveCases" class="cell large-auto">Two</div>
+                    <div id="TotalDeaths" class="cell large-auto">Three</div>
+                    <div id="newDailyCases" class="cell large-auto">Four</div>
+                    <div id="newDailyDeaths" class="cell large-auto">Five</div>
+                    <div id="usaLatestDate" class="cell large-auto">Six</div>
+                  </div>
+                </p>
               </div>
-              <hr>
-              <!-- USA Total Values -->
-              <div class="grid-x">
-                <div id="usaTotalCases" class="cell large-auto">One</div>
-                <div id="TotalActiveCases" class="cell large-auto">Two</div>
-                <div id="TotalDeaths" class="cell large-auto">Three</div>
-                <div id="newDailyCases" class="cell large-auto">Four</div>
-                <div id="newDailyDeaths" class="cell large-auto">Five</div>
-                <div id="usaLatestDate" class="cell large-auto">Six</div>
-              </div>
-            </p>
+            </div>
           </div>
         </div>
-      </div>
     </div>
+    </header>
+   
+   
   </section>
 
   <section>
@@ -102,12 +95,10 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x text-center">
         <div class="large-12">
-          <ul class="accordion" data-accordion data-multi-expand="true" style="height: 770px; overflow-y: auto;">
+          <ul class="accordion" data-accordion data-multi-expand="true" style="height: 67vh; overflow-y: auto;">
             <!-- 1st State Info -->
-
               <li class="accordion-item" id="1" data-accordion-item>
                 <a href="#" id="state-name-1" class="accordion-title"></a>
-              
                 <div class="accordion-content" data-tab-content>
                   <table class="table-scroll stack">
                     <thead>
@@ -1327,9 +1318,7 @@
   <section>
     <div class="grid-container">
       <div class="grid-x grid-padding textcenter">
-        <div class="callout large">
-          <h5>Charity results go here</h5>
-        </div>
+       
       </div>
     </div>
   </section>
@@ -1338,12 +1327,9 @@
 
   <!-- ZIP CODE SEARCH -->
   <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-
+    <div class="grid-x grid-padding-x"></div>
       <div class="cell text-center" style="background-color:rgb(222, 222, 222)">
-    
       </div>
-
     </div>
 
     <div class="grid-x grid-padding-x">
@@ -1354,6 +1340,8 @@
         <label for="inputSearchedTerm">Search for Organizations<input id="inputSearchedTerm" type="text"
             placeholder="Enter Zip Code" aria-describedby="Enter zip code"></label>
         <button class="button" id="submitBtn">submit</button>
+        <div id="results" class="callout large" style="height: 400px; overflow-y: auto;"></div>
+
       </div>
 
       <div class="cell small-3">
@@ -1361,16 +1349,25 @@
       </div>
     </div>
 
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-3">
-      </div>
-      <div id="results" class="cell small-6">
-      </div>
-      <div class="cell small-3">
-      </div>
-    </div>
-
-  </div>
+    <footer>
+      <div class="grid-container fluid main-section grid-margin-y">
+        <div class="large-12 medium-8 small-12 cell">
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 medium-3 columns cell">
+  
+              </div>
+              <div class="large-5 medium-5 columns cell title text-center footer-text">
+                  <h4> About my Company </h4>
+                  <p>&copy; Copyright 2017 by Julian Dolinay, Taniesha George, and Ryan Parker.</p>
+                  <a href="http://nicesnippets.com" target="_blank" class="button">Read More</a>
+              </div>
+              <div class="large-4 medium-4 columns cell title">
+              
+              </div>
+            </div>
+        </div>
+      </footer>
+    
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/script.js"></script>
