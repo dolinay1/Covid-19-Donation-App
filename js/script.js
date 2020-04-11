@@ -1574,38 +1574,38 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     // }
     // Color changing function
 
-    totals = document.querySelector(".totals")
+  //   totals = document.querySelector(".totals")
     
 
-    console.log(totals.value)
+  //   console.log(totals.value)
 
     
-     if (data.total_cases > 10000) {
-        //  change red
-        accordionButtons.style.backgroundColor = "rgb(219, 26, 26)";
-        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+  //    if (data.total_cases > 10000) {
+  //       //  change red
+  //       accordionButtons.style.backgroundColor = "rgb(219, 26, 26)";
+  //       accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
 
-     } else if (data.total_cases < 10000 && data.total_cases > 5000) {
-        // change orange
-        accordionButtons.style.backgroundColor = "rgb(219, 99, 30)";
-        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+  //    } else if (data.total_cases < 10000 && data.total_cases > 5000) {
+  //       // change orange
+  //       accordionButtons.style.backgroundColor = "rgb(219, 99, 30)";
+  //       accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
 
-     } else if (data.total_cases < 5000 && data.total_cases > 2500) {
-        //  change yellow
-        accordionButtons.style.backgroundColor = "rgb(243, 224, 55)";
-        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+  //    } else if (data.total_cases < 5000 && data.total_cases > 2500) {
+  //       //  change yellow
+  //       accordionButtons.style.backgroundColor = "rgb(243, 224, 55)";
+  //       accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
 
-     } else if (data.total_cases < 2500 && data.total_cases > 1000) {
-        //  change green
-        accordionButtons.style.backgroundColor = "rgb(121, 173, 36)";
-        accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+  //    } else if (data.total_cases < 2500 && data.total_cases > 1000) {
+  //       //  change green
+  //       accordionButtons.style.backgroundColor = "rgb(121, 173, 36)";
+  //       accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
 
-     } else if (data.total_cases > 1000) {
-      //  change green
-      accordionButtons.style.backgroundColor = "rgb(176, 224, 97)";
-      accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
+  //    } else if (data.total_cases > 1000) {
+  //     //  change green
+  //     accordionButtons.style.backgroundColor = "rgb(176, 224, 97)";
+  //     accordionButtons.style.color = "rgba(253, 253, 253, 0.801);";
 
-   }
+  //  }
      
 
 
@@ -1616,12 +1616,19 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
   });
 // _______________________________________
   // CHARITY SEARCH BY CITY OR ZIP
+const inputField = document.getElementById("input-search")
+const submitButton = document.querySelector("#submitBtn") 
 
-window.onload = () => { const submitButton = document.querySelector("#submitBtn") 
-submitButton.addEventListener("click", submit) }
-function submit(event) {
-  event.preventDefault();
-  const searchTerm = document.querySelector("#inputSearchedTerm"); 
+// Clear input field before and after a search
+function clearField() {
+  inputField.value = "";
+}
+inputField.value = "";
+
+submitButton.addEventListener("click", e => {
+  e.preventDefault();
+  
+  const searchTerm = document.querySelector("#input-search"); 
   let results = document.querySelector("#results"); 
   results.innerHTML = ""; 
   let searchparams = ""; 
@@ -1646,7 +1653,7 @@ function submit(event) {
       let type = charity.irsClassification.nteeType;
 
       let address = charity.mailingAddress.streetAddress1 + ",&nbsp" + charity.mailingAddress.city + ",&nbsp" + charity.mailingAddress.stateOrProvince + ",&nbsp" + charity.mailingAddress.postalCode;
-      let weburl = website
+      let weburl = website;
       if (!website) { website = "" 
       weburl = "" } 
       if (!type) { type = "" } 
@@ -1654,30 +1661,70 @@ function submit(event) {
 
 
       const card = document.createElement("div"); 
-      card.className = "callout"; 
-      card.innerHTML = ` <h4>${name}</h4> 
+      card.classList.add("callout", "callout-inner-card", "text-center");
+      card.innerHTML = ` <h3>${name}</h3> 
       <p><a href="${weburl}" target="_blank">${website}</a></p><br>
        <p style="text-transform: uppercase">${address}</p> 
        <h9 style ="color: gray">${type}</h9> ` 
        results.append(card);
     }
 
-
+    clearField();
 
   })
-}
+});
 
+
+// $("#open").click( function() {
+//   $(".accordion li").removeClass("active").addClass("active");
+// });
+
+// $(document).foundation();
+
+// function openAll() {
+//   $('.accroot').each(function () {
+//     let $acc = $(this);
+//     let $openSections = $acc.find('.accordion-item .accordion-content');
+//     $openSections.each(function (i, section) {
+//       $acc.foundation('down', $(section));
+//     });
+//   });
+// }
+
+// function closeAll() {
+//   $('.accroot').each(function () {
+//     let $acc = $(this);
+//      let $openSections = $acc.find('.accordion-item.is-active .accordion-content');
+//      $openSections.each(function (i, section) {
+//                     $acc.foundation('up', $(section));
+//                 });
+//   });
+    
+// }
+
+// Expand and Compress button
+// $('.accordion-title').foundation('down', $('.accordion-title .accordion-content'));
+// $('#state-name-1').foundation('up', $('#state-name-1 .accordion-content'));
+
+
+// $('#close').on('click', function () {
+//   $('.accordion-title').foundation('up', $('.accordion-title .accordion-content'));
+// })
+
+
+// $('#open').on('click', function () {
+//   $('#state-name-1').foundation('down', $('#state-name-1 .accordion-content'));
+// })
 
 // Severity color function
     
 // TIME DEPENDENT COLOR CHANGES -----------------------
 
-const total = document.querySelector(".totals");
-
-console.log(stateTotalCount1.textContent);
 
 
+// const total = document.querySelector(".totals");
 
+// console.log(stateTotalCount1.textContent);
 
 
 // // set a variable to all divs with the row class
