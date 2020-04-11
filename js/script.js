@@ -486,13 +486,13 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
 
     // USA Totals
     // USA Totals Cases
-    usaTotalCases.textContent = data[0].total_cases;
+    usaTotalCases.textContent = data[0].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // USA Active Cases
-    usaActiveCases.textContent = data[0].active_cases
+    usaActiveCases.textContent = data[0].active_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // USA Total Deaths
-    usaTotalDeaths.textContent = data[0].total_deaths;
+    usaTotalDeaths.textContent = data[0].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // USA New Daily Cases
     usaNewCases.textContent = data[0].new_cases;
@@ -511,7 +511,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName1.textContent = data[1].state_name;
 
     // New York total cases
-    stateTotalCount1.textContent = data[1].total_cases;
+    stateTotalCount1.textContent = data[1].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New York new cases
     stateNewCases1.textContent = data[1].new_cases;
@@ -520,7 +520,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths1.textContent = data[1].new_deaths;
 
     // New York active cases
-    stateDeathCount1.textContent = data[1].total_deaths;
+    stateDeathCount1.textContent = data[1].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New York last date record
     // stateRecordDate1.textContent = data[1].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -533,7 +533,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName2.textContent = data[2].state_name;
 
     // New Jersey total cases
-    stateTotalCount2.textContent = data[2].total_cases;
+    stateTotalCount2.textContent = data[2].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Jersey new cases
     stateNewCases2.textContent = data[2].new_cases;
@@ -542,7 +542,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths2.textContent = data[2].new_deaths;
 
     // New Jersey active cases
-    stateDeathCount2.textContent = data[2].total_deaths;
+    stateDeathCount2.textContent = data[2].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Jersey last date record
     // stateRecordDate2.textContent = data[2].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -554,7 +554,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName3.textContent = data[3].state_name;
 
     // Michigan total cases
-    stateTotalCount3.textContent = data[3].total_cases;
+    stateTotalCount3.textContent = data[3].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Michigan new cases
     stateNewCases3.textContent = data[3].new_cases;
@@ -563,7 +563,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths3.textContent = data[3].new_deaths;
 
     // Michigan active cases
-    stateDeathCount3.textContent = data[3].total_deaths;
+    stateDeathCount3.textContent = data[3].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Michigan last date record
     // stateRecordDate3.textContent = data[3].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -575,7 +575,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName4.textContent = data[4].state_name;
 
     // California total cases
-    stateTotalCount4.textContent = data[4].total_cases;
+    stateTotalCount4.textContent = data[4].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // California new cases
     stateNewCases4.textContent = data[4].new_cases;
@@ -584,7 +584,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths4.textContent = data[4].new_deaths;
 
     // California active cases
-    stateDeathCount4.textContent = data[4].total_deaths;
+    stateDeathCount4.textContent = data[4].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // California last date record
     // stateRecordDate4.textContent = data[4].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -596,7 +596,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName5.textContent = data[5].state_name;
 
     // Louisiana total cases
-    stateTotalCount5.textContent = data[5].total_cases;
+    stateTotalCount5.textContent = data[5].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Louisiana new cases
     stateNewCases5.textContent = data[5].new_cases;
@@ -605,7 +605,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths5.textContent = data[5].new_deaths;
 
     // Louisiana active cases
-    stateDeathCount5.textContent = data[5].total_deaths;
+    stateDeathCount5.textContent = data[5].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Louisiana last date record
     // stateRecordDate5.textContent = data[5].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -617,7 +617,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName6.textContent = data[6].state_name;
 
     // Massachusetts total cases
-    stateTotalCount6.textContent = data[6].total_cases;
+    stateTotalCount6.textContent = data[6].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Massachusetts new cases
     stateNewCases6.textContent = data[6].new_cases;
@@ -626,7 +626,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths6.textContent = data[6].new_deaths;
 
     // Massachusetts active cases
-    stateDeathCount6.textContent = data[6].total_deaths;
+    stateDeathCount6.textContent = data[6].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Massachusetts last date record
     // stateRecordDate6.textContent = data[6].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -638,7 +638,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName7.textContent = data[7].state_name;
 
     // Pennsylvania total cases
-    stateTotalCount7.textContent = data[7].total_cases;
+    stateTotalCount7.textContent = data[7].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Pennsylvania new cases
     stateNewCases7.textContent = data[7].new_cases;
@@ -647,7 +647,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths7.textContent = data[7].new_deaths;
 
     // Pennsylvania active cases
-    stateDeathCount7.textContent = data[7].total_deaths;
+    stateDeathCount7.textContent = data[7].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Pennsylvania last date record
     // stateRecordDate7.textContent = data[7].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -659,7 +659,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName8.textContent = data[8].state_name;
 
     // Florida total cases
-    stateTotalCount8.textContent = data[8].total_cases;
+    stateTotalCount8.textContent = data[8].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Florida new cases
     stateNewCases8.textContent = data[8].new_cases;
@@ -668,7 +668,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths8.textContent = data[8].new_deaths;
 
     // Florida active cases
-    stateDeathCount8.textContent = data[8].total_deaths;
+    stateDeathCount8.textContent = data[8].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Florida last date record
     // stateRecordDate8.textContent = data[8].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -680,7 +680,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName9.textContent = data[9].state_name;
 
     // Illinois total cases
-    stateTotalCount9.textContent = data[9].total_cases;
+    stateTotalCount9.textContent = data[9].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Illinois new cases
     stateNewCases9.textContent = data[9].new_cases;
@@ -689,7 +689,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths9.textContent = data[9].new_deaths;
 
     // Illinois active cases
-    stateDeathCount9.textContent = data[9].total_deaths;
+    stateDeathCount9.textContent = data[9].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Illinois last date record
     // stateRecordDate9.textContent = data[9].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -701,7 +701,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName10.textContent = data[10].state_name;
 
     // Georgia total cases
-    stateTotalCount10.textContent = data[10].total_cases;
+    stateTotalCount10.textContent = data[10].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Georgia new cases
     stateNewCases10.textContent = data[10].new_cases;
@@ -710,7 +710,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths10.textContent = data[10].new_deaths;
 
     // Georgia active cases
-    stateDeathCount10.textContent = data[10].total_deaths;
+    stateDeathCount10.textContent = data[10].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Georgia last date record
     // stateRecordDate10.textContent = data[10].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -722,7 +722,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName11.textContent = data[11].state_name;
 
     // Texas total cases
-    stateTotalCount11.textContent = data[11].total_cases;
+    stateTotalCount11.textContent = data[11].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Texas new cases
     stateNewCases11.textContent = data[11].new_cases;
@@ -731,7 +731,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths11.textContent = data[11].new_deaths;
 
     // Texas active cases
-    stateDeathCount11.textContent = data[11].total_deaths;
+    stateDeathCount11.textContent = data[11].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Texas last date record
     // stateRecordDate11.textContent = data[11].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -743,7 +743,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName12.textContent = data[12].state_name;
 
     // Washington total cases
-    stateTotalCount12.textContent = data[12].total_cases;
+    stateTotalCount12.textContent = data[12].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Washington new cases
     stateNewCases12.textContent = data[12].new_cases;
@@ -752,7 +752,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths12.textContent = data[12].new_deaths;
 
     // Washington active cases
-    stateDeathCount12.textContent = data[12].total_deaths;
+    stateDeathCount12.textContent = data[12].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Washington last date record
     //  stateRecordDate12.textContent = data[12].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -764,7 +764,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName13.textContent = data[13].state_name;
 
     // Connecticut total cases
-    stateTotalCount13.textContent = data[13].total_cases;
+    stateTotalCount13.textContent = data[13].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Connecticut new cases
     stateNewCases13.textContent = data[13].new_cases;
@@ -773,7 +773,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths13.textContent = data[13].new_deaths;
 
     // Connecticut active cases
-    stateDeathCount13.textContent = data[13].total_deaths;
+    stateDeathCount13.textContent = data[13].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Connecticut last date record
     //  stateRecordDate13.textContent = data[13].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -785,7 +785,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName14.textContent = data[14].state_name;
 
     // Indiana total cases
-    stateTotalCount14.textContent = data[14].total_cases;
+    stateTotalCount14.textContent = data[14].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Indiana new cases
     stateNewCases14.textContent = data[14].new_cases;
@@ -794,7 +794,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths14.textContent = data[14].new_deaths;
 
     // Indiana active cases
-    stateDeathCount14.textContent = data[14].total_deaths;
+    stateDeathCount14.textContent = data[14].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Indiana last date record
     // stateRecordDate14.textContent = data[14].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -806,7 +806,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName15.textContent = data[15].state_name;
 
     // Colorodo total cases
-    stateTotalCount15.textContent = data[15].total_cases;
+    stateTotalCount15.textContent = data[15].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Colorodo new cases
     stateNewCases15.textContent = data[15].new_cases;
@@ -815,7 +815,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths15.textContent = data[15].new_deaths;
 
     // Colorodo active cases
-    stateDeathCount15.textContent = data[15].total_deaths;
+    stateDeathCount15.textContent = data[15].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Colorodo last date record
     //  stateRecordDate15.textContent = data[15].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -827,7 +827,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName16.textContent = data[16].state_name;
 
     // Maryland total cases
-    stateTotalCount16.textContent = data[16].total_cases;
+    stateTotalCount16.textContent = data[16].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Maryland new cases
     stateNewCases16.textContent = data[16].new_cases;
@@ -836,7 +836,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths16.textContent = data[16].new_deaths;
 
     // Maryland active cases
-    stateDeathCount16.textContent = data[16].total_deaths;
+    stateDeathCount16.textContent = data[16].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Maryland last date record
     // stateRecordDate16.textContent = data[16].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -848,7 +848,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName17.textContent = data[17].state_name;
 
     // Ohio total cases
-    stateTotalCount17.textContent = data[17].total_cases;
+    stateTotalCount17.textContent = data[17].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Ohio new cases
     stateNewCases17.textContent = data[17].new_cases;
@@ -857,7 +857,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths17.textContent = data[17].new_deaths;
 
     // Ohio active cases
-    stateDeathCount17.textContent = data[17].total_deaths;
+    stateDeathCount17.textContent = data[17].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Ohio last date record
     // stateRecordDate17.textContent = data[17].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -869,7 +869,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName18.textContent = data[18].state_name;
 
     // Tennessee total cases
-    stateTotalCount18.textContent = data[18].total_cases;
+    stateTotalCount18.textContent = data[18].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Tennessee new cases
     stateNewCases18.textContent = data[18].new_cases;
@@ -878,7 +878,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths18.textContent = data[18].new_deaths;
 
     // Tennessee active cases
-    stateDeathCount18.textContent = data[18].total_deaths;
+    stateDeathCount18.textContent = data[18].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Tennessee last date record
     // stateRecordDate18.textContent = data[18].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -890,7 +890,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName19.textContent = data[19].state_name;
 
     // Virginia total cases
-    stateTotalCount19.textContent = data[19].total_cases;
+    stateTotalCount19.textContent = data[19].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Virginia new cases
     stateNewCases19.textContent = data[19].new_cases;
@@ -899,7 +899,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths19.textContent = data[19].new_deaths;
 
     // Virginia active cases
-    stateDeathCount19.textContent = data[19].total_deaths;
+    stateDeathCount19.textContent = data[19].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Virginia last date record
     // stateRecordDate19.textContent = data[19].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -911,7 +911,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName20.textContent = data[20].state_name;
 
     // North Carolina total cases
-    stateTotalCount20.textContent = data[20].total_cases;
+    stateTotalCount20.textContent = data[20].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // North Carolina new cases
     stateNewCases20.textContent = data[20].new_cases;
@@ -920,7 +920,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths20.textContent = data[20].new_deaths;
 
     // North Carolina active cases
-    stateDeathCount20.textContent = data[20].total_deaths;
+    stateDeathCount20.textContent = data[20].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // North Carolina last date record
     // stateRecordDate20.textContent = data[20].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -932,7 +932,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName21.textContent = data[21].state_name;
 
     // Missouri Carolina total cases
-    stateTotalCount21.textContent = data[21].total_cases;
+    stateTotalCount21.textContent = data[21].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Missouri Carolina new cases
     stateNewCases21.textContent = data[21].new_cases;
@@ -941,7 +941,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths21.textContent = data[21].new_deaths;
 
     // Missouri Carolina active cases
-    stateDeathCount21.textContent = data[21].total_deaths;
+    stateDeathCount21.textContent = data[21].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Missouri Carolina last date record
     // stateRecordDate21.textContent = data[21].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -953,7 +953,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName22.textContent = data[22].state_name;
 
     // Wisconsin total cases
-    stateTotalCount22.textContent = data[22].total_cases;
+    stateTotalCount22.textContent = data[22].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Wisconsin new cases
     stateNewCases22.textContent = data[22].new_cases;
@@ -962,7 +962,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths22.textContent = data[22].new_deaths;
 
     // Wisconsin active cases
-    stateDeathCount22.textContent = data[22].total_deaths;
+    stateDeathCount22.textContent = data[22].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Wisconsin last date record
     // stateRecordDate22.textContent = data[22].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -973,7 +973,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName23.textContent = data[23].state_name;
 
     // Arizona total cases
-    stateTotalCount23.textContent = data[23].total_cases;
+    stateTotalCount23.textContent = data[23].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Arizona new cases
     stateNewCases23.textContent = data[23].new_cases;
@@ -982,7 +982,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths23.textContent = data[23].new_deaths;
 
     // Arizona active cases
-    stateDeathCount23.textContent = data[23].total_deaths;
+    stateDeathCount23.textContent = data[23].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Arizona last date record
     // stateRecordDate23.textContent = data[23].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -994,7 +994,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName24.textContent = data[24].state_name;
 
     // South Carolina total cases
-    stateTotalCount24.textContent = data[24].total_cases;
+    stateTotalCount24.textContent = data[24].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // South Carolina new cases
     stateNewCases24.textContent = data[24].new_cases;
@@ -1003,7 +1003,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths24.textContent = data[24].new_deaths;
 
     // South Carolina active cases
-    stateDeathCount24.textContent = data[24].total_deaths;
+    stateDeathCount24.textContent = data[24].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // South Carolina last date record
     // stateRecordDate24.textContent = data[24].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1015,7 +1015,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName25.textContent = data[25].state_name;
 
     // Alabama total cases
-    stateTotalCount25.textContent = data[25].total_cases;
+    stateTotalCount25.textContent = data[25].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Alabama new cases
     stateNewCases25.textContent = data[25].new_cases;
@@ -1024,7 +1024,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths25.textContent = data[25].new_deaths;
 
     // Alabama active cases
-    stateDeathCount25.textContent = data[25].total_deaths;
+    stateDeathCount25.textContent = data[25].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Alabama last date record
     // stateRecordDate25.textContent = data[25].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1036,7 +1036,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName26.textContent = data[26].state_name;
 
     // Nevada total cases
-    stateTotalCount26.textContent = data[26].total_cases;
+    stateTotalCount26.textContent = data[26].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Nevada new cases
     stateNewCases26.textContent = data[26].new_cases;
@@ -1045,7 +1045,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths26.textContent = data[26].new_deaths;
 
     // Nevada active cases
-    stateDeathCount26.textContent = data[26].total_deaths;
+    stateDeathCount26.textContent = data[26].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Nevada last date record
     //  stateRecordDate26.textContent = data[26].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1057,7 +1057,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName27.textContent = data[27].state_name;
 
     // Mississippi total cases
-    stateTotalCount27.textContent = data[27].total_cases;
+    stateTotalCount27.textContent = data[27].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Mississippi new cases
     stateNewCases27.textContent = data[27].new_cases;
@@ -1066,7 +1066,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths27.textContent = data[27].new_deaths;
 
     // Mississippi active cases
-    stateDeathCount27.textContent = data[27].total_deaths;
+    stateDeathCount27.textContent = data[27].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Mississippi last date record
     // stateRecordDate27.textContent = data[27].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1078,7 +1078,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName28.textContent = data[28].state_name;
 
     // Utah total cases
-    stateTotalCount28.textContent = data[28].total_cases;
+    stateTotalCount28.textContent = data[28].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Utah new cases
     stateNewCases28.textContent = data[28].new_cases;
@@ -1087,7 +1087,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths28.textContent = data[28].new_deaths;
 
     // Utah active cases
-    stateDeathCount28.textContent = data[28].total_deaths;
+    stateDeathCount28.textContent = data[28].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Utah last date record
     // stateRecordDate28.textContent = data[28].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1099,7 +1099,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName29.textContent = data[29].state_name;
 
     // Oklahoma total cases
-    stateTotalCount29.textContent = data[29].total_cases;
+    stateTotalCount29.textContent = data[29].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Oklahoma new cases
     stateNewCases29.textContent = data[29].new_cases;
@@ -1108,7 +1108,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths29.textContent = data[29].new_deaths;
 
     // Oklahoma active cases
-    stateDeathCount29.textContent = data[29].total_deaths;
+    stateDeathCount29.textContent = data[29].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Oklahoma last date record
     //  stateRecordDate29.textContent = data[29].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1120,7 +1120,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName30.textContent = data[30].state_name;
 
     // Rhode Island total cases
-    stateTotalCount30.textContent = data[30].total_cases;
+    stateTotalCount30.textContent = data[30].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Rhode Island new cases
     stateNewCases30.textContent = data[30].new_cases;
@@ -1129,7 +1129,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths30.textContent = data[30].new_deaths;
 
     // Rhode Island active cases
-    stateDeathCount30.textContent = data[30].total_deaths;
+    stateDeathCount30.textContent = data[30].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Rhode Island last date record
     //  stateRecordDate30.textContent = data[30].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1141,7 +1141,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName31.textContent = data[31].state_name;
 
     // District of Columbia total cases
-    stateTotalCount31.textContent = data[31].total_cases;
+    stateTotalCount31.textContent = data[31].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // District of Columbia new cases
     stateNewCases31.textContent = data[31].new_cases;
@@ -1150,7 +1150,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths31.textContent = data[31].new_deaths;
 
     // District of Columbia active cases
-    stateDeathCount31.textContent = data[31].total_deaths;
+    stateDeathCount31.textContent = data[31].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // District of Columbia last date record
     //  stateRecordDate31.textContent = data[31].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1162,7 +1162,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName32.textContent = data[32].state_name;
 
     // Kentucky total cases
-    stateTotalCount32.textContent = data[32].total_cases;
+    stateTotalCount32.textContent = data[32].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Kentucky new cases
     stateNewCases32.textContent = data[32].new_cases;
@@ -1171,7 +1171,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths32.textContent = data[32].new_deaths;
 
     // Kentucky active cases
-    stateDeathCount32.textContent = data[32].total_deaths;
+    stateDeathCount32.textContent = data[32].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Kentucky last date record
     // stateRecordDate32.textContent = data[32].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1183,7 +1183,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName33.textContent = data[33].state_name;
 
     // Oregon total cases
-    stateTotalCount33.textContent = data[33].total_cases;
+    stateTotalCount33.textContent = data[33].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Oregon new cases
     stateNewCases33.textContent = data[33].new_cases;
@@ -1192,7 +1192,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths33.textContent = data[33].new_deaths;
 
     // Oregon active cases
-    stateDeathCount33.textContent = data[33].total_deaths;
+    stateDeathCount33.textContent = data[33].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Oregon last date record
     // stateRecordDate33.textContent = data[33].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1204,7 +1204,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName34.textContent = data[34].state_name;
 
     // Idaho total cases
-    stateTotalCount34.textContent = data[34].total_cases;
+    stateTotalCount34.textContent = data[34].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Idaho new cases
     stateNewCases34.textContent = data[34].new_cases;
@@ -1213,7 +1213,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths34.textContent = data[34].new_deaths;
 
     // Idaho active cases
-    stateDeathCount34.textContent = data[34].total_deaths;
+    stateDeathCount34.textContent = data[34].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Idaho last date record
     //  stateRecordDate34.textContent = data[34].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1225,7 +1225,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName35.textContent = data[35].state_name;
 
     // Minnesota total cases
-    stateTotalCount35.textContent = data[35].total_cases;
+    stateTotalCount35.textContent = data[35].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Minnesota new cases
     stateNewCases35.textContent = data[35].new_cases;
@@ -1234,7 +1234,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths35.textContent = data[35].new_deaths;
 
     // Minnesota active cases
-    stateDeathCount35.textContent = data[35].total_deaths;
+    stateDeathCount35.textContent = data[35].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Minnesota last date record
     //  stateRecordDate35.textContent = data[35].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1246,7 +1246,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName36.textContent = data[36].state_name;
 
     // Iowa total cases
-    stateTotalCount36.textContent = data[36].total_cases;
+    stateTotalCount36.textContent = data[36].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Iowa new cases
     stateNewCases36.textContent = data[36].new_cases;
@@ -1255,7 +1255,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths36.textContent = data[36].new_deaths;
 
     // Iowa active cases
-    stateDeathCount36.textContent = data[36].total_deaths;
+    stateDeathCount36.textContent = data[36].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Iowa last date record
     //  stateRecordDate36.textContent = data[36].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1267,7 +1267,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName37.textContent = data[37].state_name;
 
     // Delaware total cases
-    stateTotalCount37.textContent = data[37].total_cases;
+    stateTotalCount37.textContent = data[37].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Delaware new cases
     stateNewCases37.textContent = data[37].new_cases;
@@ -1276,7 +1276,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths37.textContent = data[37].new_deaths;
 
     // Delaware active cases
-    stateDeathCount37.textContent = data[37].total_deaths;
+    stateDeathCount37.textContent = data[37].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Delaware last date record
     //  stateRecordDate37.textContent = data[37].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1288,7 +1288,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName38.textContent = data[38].state_name;
 
     // Arkansas total cases
-    stateTotalCount38.textContent = data[38].total_cases;
+    stateTotalCount38.textContent = data[38].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Arkansas new cases
     stateNewCases38.textContent = data[38].new_cases;
@@ -1297,7 +1297,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths38.textContent = data[38].new_deaths;
 
     // Arkansas active cases
-    stateDeathCount38.textContent = data[38].total_deaths;
+    stateDeathCount38.textContent = data[38].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Arkansas last date record
     //  stateRecordDate38.textContent = data[38].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1309,7 +1309,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName39.textContent = data[39].state_name;
 
     // Kansas total cases
-    stateTotalCount39.textContent = data[39].total_cases;
+    stateTotalCount39.textContent = data[39].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Kansas new cases
     stateNewCases39.textContent = data[39].new_cases;
@@ -1318,7 +1318,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths39.textContent = data[39].new_deaths;
 
     // Kansas active cases
-    stateDeathCount39.textContent = data[39].total_deaths;
+    stateDeathCount39.textContent = data[39].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Kansas last date record
     //  stateRecordDate39.textContent = data[39].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1330,7 +1330,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName40.textContent = data[40].state_name;
 
     // New Mexico total cases
-    stateTotalCount40.textContent = data[40].total_cases;
+    stateTotalCount40.textContent = data[40].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Mexico new cases
     stateNewCases40.textContent = data[40].new_cases;
@@ -1339,7 +1339,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths40.textContent = data[40].new_deaths;
 
     // New Mexico active cases
-    stateDeathCount40.textContent = data[40].total_deaths;
+    stateDeathCount40.textContent = data[40].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Mexico last date record
     // stateRecordDate40.textContent = data[40].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1351,7 +1351,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName41.textContent = data[41].state_name;
 
     // New Hampshire total cases
-    stateTotalCount41.textContent = data[41].total_cases;
+    stateTotalCount41.textContent = data[41].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Hampshire new cases
     stateNewCases41.textContent = data[41].new_cases;
@@ -1360,7 +1360,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths41.textContent = data[41].new_deaths;
 
     // New Hampshire active cases
-    stateDeathCount41.textContent = data[41].total_deaths;
+    stateDeathCount41.textContent = data[41].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // New Hampshire last date record
     //  stateRecordDate41.textContent = data[41].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1372,7 +1372,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName42.textContent = data[42].state_name;
 
     // Vermont total cases
-    stateTotalCount42.textContent = data[42].total_cases;
+    stateTotalCount42.textContent = data[42].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Vermont new cases
     stateNewCases42.textContent = data[42].new_cases;
@@ -1381,7 +1381,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths42.textContent = data[42].new_deaths;
 
     // Vermont active cases
-    stateDeathCount42.textContent = data[42].total_deaths;
+    stateDeathCount42.textContent = data[42].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Vermont last date record
     //  stateRecordDate42.textContent = data[42].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1393,7 +1393,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName43.textContent = data[43].state_name;
 
     // Maine total cases
-    stateTotalCount43.textContent = data[43].total_cases;
+    stateTotalCount43.textContent = data[43].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Maine new cases
     stateNewCases43.textContent = data[43].new_cases;
@@ -1402,7 +1402,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths43.textContent = data[43].new_deaths;
 
     // Maine active cases
-    stateDeathCount43.textContent = data[43].total_deaths;
+    stateDeathCount43.textContent = data[43].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Maine last date record
     //  stateRecordDate43.textContent = data[43].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1414,7 +1414,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName44.textContent = data[44].state_name;
 
     // Nebraska total cases
-    stateTotalCount44.textContent = data[44].total_cases;
+    stateTotalCount44.textContent = data[44].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Nebraska new cases
     stateNewCases44.textContent = data[44].new_cases;
@@ -1423,7 +1423,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths44.textContent = data[44].new_deaths;
 
     // Nebraska active cases
-    stateDeathCount44.textContent = data[44].total_deaths;
+    stateDeathCount44.textContent = data[44].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Nebraska last date record
     // stateRecordDate44.textContent = data[44].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1435,7 +1435,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName45.textContent = data[45].state_name;
 
     // West Virgina total cases
-    stateTotalCount45.textContent = data[45].total_cases;
+    stateTotalCount45.textContent = data[45].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // West Virgina new cases
     stateNewCases45.textContent = data[45].new_cases;
@@ -1444,7 +1444,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths45.textContent = data[45].new_deaths;
 
     // West Virgina active cases
-    stateDeathCount45.textContent = data[45].total_deaths;
+    stateDeathCount45.textContent = data[45].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // West Virgina last date record
     //  stateRecordDate45.textContent = data[45].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1456,7 +1456,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName46.textContent = data[46].state_name;
 
     // Hawaii total cases
-    stateTotalCount46.textContent = data[46].total_cases;
+    stateTotalCount46.textContent = data[46].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Hawaii new cases
     stateNewCases46.textContent = data[46].new_cases;
@@ -1465,7 +1465,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths46.textContent = data[46].new_deaths;
 
     // Hawaii active cases
-    stateDeathCount46.textContent = data[46].total_deaths;
+    stateDeathCount46.textContent = data[46].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Hawaii last date record
     // stateRecordDate46.textContent = data[46].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1477,7 +1477,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName47.textContent = data[47].state_name;
 
     // South Dakota total cases
-    stateTotalCount47.textContent = data[47].total_cases;
+    stateTotalCount47.textContent = data[47].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // South Dakota new cases
     stateNewCases47.textContent = data[47].new_cases;
@@ -1486,7 +1486,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths47.textContent = data[47].new_deaths;
 
     // South Dakota active cases
-    stateDeathCount47.textContent = data[47].total_deaths;
+    stateDeathCount47.textContent = data[47].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // South Dakota last date record
     //  stateRecordDate47.textContent = data[47].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1498,7 +1498,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName48.textContent = data[48].state_name;
 
     // Montana total cases
-    stateTotalCount48.textContent = data[48].total_cases;
+    stateTotalCount48.textContent = data[48].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Montana new cases
     stateNewCases48.textContent = data[48].new_cases;
@@ -1507,7 +1507,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths48.textContent = data[48].new_deaths;
 
     // Montana active cases
-    stateDeathCount48.textContent = data[48].total_deaths;
+    stateDeathCount48.textContent = data[48].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Montana last date record
     //  stateRecordDate48.textContent = data[48].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1519,7 +1519,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName49.textContent = data[49].state_name;
 
     // North Dakota total cases
-    stateTotalCount49.textContent = data[49].total_cases;
+    stateTotalCount49.textContent = data[49].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // North Dakota new cases
     stateNewCases49.textContent = data[49].new_cases;
@@ -1528,7 +1528,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths49.textContent = data[49].new_deaths;
 
     // North Dakota active cases
-    stateDeathCount49.textContent = data[49].total_deaths;
+    stateDeathCount49.textContent = data[49].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // North Dakota last date record
     //  stateRecordDate49.textContent = data[49].record_date.substr(5, 5).replace("-","/") + "/2020";
@@ -1540,7 +1540,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateName50.textContent = data[50].state_name;
 
     // Wyoming total cases
-    stateTotalCount50.textContent = data[50].total_cases;
+    stateTotalCount50.textContent = data[50].total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Wyoming new cases
     stateNewCases50.textContent = data[50].new_cases;
@@ -1549,7 +1549,7 @@ fetch("https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_in_united_st
     stateNewDeaths50.textContent = data[50].new_deaths;
 
     // Wyoming active cases
-    stateDeathCount50.textContent = data[50].total_deaths;
+    stateDeathCount50.textContent = data[50].total_deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     // Wyoming last date record
     //  stateRecordDate50.textContent = data[50].record_date.substr(5, 5).replace("-","/") + "/2020";
