@@ -8,6 +8,7 @@
   <title>The Covid-19 Relief Initiative || Helping your local communities in times of need</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet"> 
 
@@ -28,7 +29,7 @@
             </div>
             
             <div class="card us-stats" style="width: 300px;">
-              <h4 class="text-center us-info-header h4-header styling">The current situation in the US</h4>
+              <h4 class="text-center us-info-header">The current situation of the US</h4>
               
               <div class="card-section">
                 <p>
@@ -57,23 +58,12 @@
         </div>
     </div>
     </header>
-   
-   
   </section>
 
   <section>
     <div class="grid-container">
       <div class="grid-x grid-padding-x text-center">
-        <div class="large-2">
-          <button class="button" type="button" data-toggle="example-dropdown-bottom-center">Sort By</button>
-          <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center"
-            data-dropdown data-auto-focus="true">
-            <!-- My dropdown content in here -->
-          </div>
-        </div>
-        <div class="large-2 large-offset-8">
-          severity chart
-        </div>
+        
       </div>
     </div>
   </section>
@@ -95,9 +85,18 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x text-center">
         <div class="large-12">
-          <ul class="accordion" data-accordion data-multi-expand="true" style="height: 67vh; overflow-y: auto;">
+          <!-- expand button -->
+          <div class="large-2">
+            <!-- <button id="#open" class="button" type="button" data-toggle="example-dropdown-bottom-center">Expand All</button> -->
+            <!-- <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center"
+              data-dropdown data-auto-focus="true">
+              
+            </div> -->
+          </div>
+          <h4>State Statistics</h4>
+          <ul class="accordion accordion-root accroot" data-accordion data-allow-all-closed="true" ata-multi-expand="true" style="height: 77vh; overflow-y: auto;">
             <!-- 1st State Info -->
-              <li class="accordion-item" id="1" data-accordion-item>
+              <li class="accordion-item severe" data-accordion-item>
                 <a href="#" id="state-name-1" class="accordion-title"></a>
                 <div class="accordion-content" data-tab-content>
                   <table class="table-scroll stack">
@@ -120,7 +119,7 @@
                 </div>
               </li>
               <!-- 2nd State Info -->
-              <li class="accordion-item" id="2" data-accordion-item>
+              <li class="accordion-item severe" id="2" data-accordion-item>
                 <a href="#" id="state-name-2" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -144,7 +143,7 @@
                 </div>
               </li>
                 <!-- 3rd State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-3" class="accordion-title"></a>
                   
                   <div class="accordion-content" data-tab-content>
@@ -168,7 +167,7 @@
                   </div>
                 </li>
                   <!-- 4th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item severe" id="" data-accordion-item>
                 <a href="#" id="state-name-4" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -192,7 +191,7 @@
                 </div>
               </li>
                 <!-- 5th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-5" class="accordion-title"></a>
                   
                   <div class="accordion-content" data-tab-content>
@@ -216,7 +215,7 @@
                   </div>
                 </li>
                   <!-- 6th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item severe" id="" data-accordion-item>
                 <a href="#" id="state-name-6" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -240,7 +239,7 @@
                 </div>
               </li>
                 <!-- 7th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                    <a href="#" id="state-name-7" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -264,7 +263,7 @@
                 </div>
                 </li>
                   <!-- 8th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item severe" id="" data-accordion-item>
                 <a href="#" id="state-name-8" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -288,7 +287,7 @@
                 </div>
               </li>
                 <!-- 9th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-9" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -312,7 +311,7 @@
                   </div>
                 </li>
                   <!-- 10th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item severe" id="" data-accordion-item>
                 <a href="#" id="state-name-10" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -336,7 +335,7 @@
                 </div>
               </li>
                 <!-- 11th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-11" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -360,7 +359,7 @@
                   </div>
                 </li>
                   <!-- 12th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item severe" id="" data-accordion-item>
                 <a href="#" id="state-name-12" class="accordion-title"></a>
                 
                 <div class="accordion-content" data-tab-content>
@@ -384,7 +383,7 @@
                 </div>
               </li>
                 <!-- 13th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item severe" id="" data-accordion-item>
                   <a href="#" id="state-name-13" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -408,7 +407,7 @@
                   </div>
                 </li>
                   <!-- 14th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item high" id="" data-accordion-item>
                 <a href="#" id="state-name-14" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -432,7 +431,7 @@
                   </div>
               </li>
                 <!-- 15 State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item high" id="" data-accordion-item>
                   <a href="#" id="state-name-15" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -456,7 +455,7 @@
                   </div>
                 </li>
                   <!-- 16th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item high" id="" data-accordion-item>
                 <a href="#" id="state-name-16" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -480,7 +479,7 @@
                   </div>
               </li>
                    <!-- 17th State Info -->
-                   <li class="accordion-item" id="" data-accordion-item>
+                   <li class="accordion-item high" id="" data-accordion-item>
                     <a href="#" id="state-name-17" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -504,7 +503,7 @@
                   </div>
                   </li>
                        <!-- 18th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item medium" id="" data-accordion-item>
                 <a href="#" id="state-name-18" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -528,7 +527,7 @@
                   </div>
               </li>
                    <!-- 19th State Info -->
-                   <li class="accordion-item" id="" data-accordion-item>
+                   <li class="accordion-item medium" id="" data-accordion-item>
                     <a href="#" id="state-name-19" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -552,7 +551,7 @@
                   </div>
                   </li>
                   <!-- 20th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item medium" id="" data-accordion-item>
                 <a href="#" id="state-name-20" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -576,7 +575,7 @@
                   </div>
               </li>
                        <!-- 21st State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item medium" id="" data-accordion-item>
                 <a href="#" id="state-name-21" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -600,7 +599,7 @@
                   </div>
               </li>
                 <!-- 22nd State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item medium" id="" data-accordion-item>
                   <a href="#" id="state-name-22" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -624,7 +623,7 @@
                   </div>
                 </li>
                   <!-- 23rd State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item medium" id="" data-accordion-item>
                 <a href="#" id="state-name-23" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -648,7 +647,7 @@
                   </div>
               </li>
                 <!-- 24th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item medium" id="" data-accordion-item>
                   <a href="#" id="state-name-24" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -672,7 +671,7 @@
                   </div>
                 </li>
                   <!-- 25th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item medium" id="" data-accordion-item>
                 <a href="#" id="state-name-25" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -696,7 +695,7 @@
                   </div>
               </li>
                 <!-- 26th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item medium" id="" data-accordion-item>
                   <a href="#" id="state-name-26" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -720,7 +719,7 @@
                   </div>
                 </li>
                   <!-- 27th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item low" id="" data-accordion-item>
                 <a href="#" id="state-name-27" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -744,7 +743,7 @@
                   </div>
               </li>
                 <!-- 28th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-28" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -768,7 +767,7 @@
                   </div>
                 </li>
                   <!-- 29th State Info -->
-              <li class="accordion-item" id="" data-accordion-item>
+              <li class="accordion-item low" id="" data-accordion-item>
                 <a href="#" id="state-name-29" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -792,7 +791,7 @@
                   </div>
               </li>
                 <!-- 30th State Info -->
-                <li class="accordion-item" id="" data-accordion-item>
+                <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-30" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -816,7 +815,7 @@
                   </div>
                 </li>
                  <!-- 31st State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-31" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -840,7 +839,7 @@
                   </div>
                 </li>
                  <!-- 32nd State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-32" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -864,7 +863,7 @@
                   </div>
                 </li>
                  <!-- 33rd State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-33" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -888,7 +887,7 @@
                   </div>
                 </li>
                  <!-- 34th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-34" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -912,7 +911,7 @@
                   </div>
                 </li>
                  <!-- 35th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-35" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -936,7 +935,7 @@
                   </div>
                 </li>
                  <!-- 36th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-36" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -960,7 +959,7 @@
                   </div>
                 </li>
                  <!-- 37th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-37" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -984,7 +983,7 @@
                   </div>
                 </li>
                  <!-- 38th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-38" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1008,7 +1007,7 @@
                   </div>
                 </li>
                  <!-- 39th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-39" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1032,7 +1031,7 @@
                   </div>
                 </li>
                  <!-- 40th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item low" id="" data-accordion-item>
                   <a href="#" id="state-name-40" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1056,7 +1055,7 @@
                   </div>
                 </li>
                  <!-- 41st State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-41" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1080,7 +1079,7 @@
                   </div>
                 </li>
                  <!-- 42nd State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-42" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1104,7 +1103,7 @@
                   </div>
                 </li>
                  <!-- 43rd State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-43" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1128,7 +1127,7 @@
                   </div>
                 </li>
                  <!-- 44th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-44" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1152,7 +1151,7 @@
                   </div>
                 </li>
                  <!-- 45th State Info -->
-                 <li class="accordion-item" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-45" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1200,7 +1199,7 @@
                   </div>
                 </li>
                  <!-- 47th State Info -->
-                 <li class="accordion-item low" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-47" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1224,7 +1223,7 @@
                   </div>
                 </li>
                  <!-- 48th State Info -->
-                 <li class="accordion-item medium" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-48" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1248,7 +1247,7 @@
                   </div>
                 </li>
                  <!-- 49th State Info -->
-                 <li class="accordion-item high" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-49" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1272,7 +1271,7 @@
                   </div>
                 </li>
                  <!-- 50th State Info -->
-                 <li class="accordion-item severe" id="" data-accordion-item>
+                 <li class="accordion-item very-low" id="" data-accordion-item>
                   <a href="#" id="state-name-50" class="accordion-title"></a>
                 
                   <div class="accordion-content" data-tab-content>
@@ -1303,64 +1302,45 @@
     </div>
   </section>
 
-  <section>
+
+
+  <!-- ZIP CODE SEARCH -->
+  <section class="user-submit">
     <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y text-center">
-        <div class="large-12 cell">
-          <h3>Help charities that need your support today.
-            <br>
-            Find local charities by entering you city or zip code.</h3>
+      <div class="grid-x grid-padding-x">
+        <div class="callout large callout-outer float-center">
+          <div class="cell small-6">
+            <div class="cell callout-header">
+            
+              <h4>Your support is needed now more than ever.
+                <br>
+                Find local charities by entering your city or zip code.</h4>
+            </div>
+              <label class="float-center" id="search-description" for="input-search">Search for Organizations<input id="input-search" type="text"
+                placeholder="Enter a City or a Zip Code" aria-describedby="Enter a City Name or a Zip Code"></label>
+            <button class="button float-center" id="submitBtn">Submit</button>
+            <div id="results" class="callout callout-inner large float-center" style="height: 50vh; overflow-y: auto;"></div>
+          </div>
         </div>
+        
       </div>
     </div>
   </section>
 
-
-
-  <!-- ZIP CODE SEARCH -->
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x"></div>
-      <div class="cell text-center" style="background-color:rgb(222, 222, 222)">
-      </div>
-    </div>
-
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-3">
-      </div>
-      <div class="cell small-6">
-
-        <label for="inputSearchedTerm">Search for Organizations<input id="inputSearchedTerm" type="text"
-            placeholder="Enter a City or a Zip Code" aria-describedby="Enter a City Name or a Zip Code"></label>
-        <button class="button" id="submitBtn">submit</button>
-        <div id="results" class="callout large" style="height: 400px; overflow-y: auto;"></div>
-
-      </div>
-
-      <div class="cell small-3">
-
-      </div>
-    </div>
-
+    
     <footer>
       <div class="grid-container fluid main-section grid-margin-y">
-        <div class="large-12 medium-8 small-12 cell">
             <div class="grid-x grid-padding-x">
-              <div class="large-3 medium-3 columns cell">
-  
-              </div>
-              <div class="large-5 medium-5 columns cell title text-center footer-text">
-                  <h4> About my Company </h4>
-                  <p>&copy; Copyright 2017 by Julian Dolinay, Taniesha George, and Ryan Parker.</p>
-                  <a href="http://nicesnippets.com" target="_blank" class="button">Read More</a>
-              </div>
-              <div class="large-4 medium-4 columns cell title">
-              
-              </div>
+              <div class="large-12 cell title text-center footer-text">
+                <h4> About Us </h4>
+                <p>&copy; Copyright 2020 by Julian Dolinay, Taneisha George, and Ryan Parker</p>
+                <iframe class="github-btn"src="https://ghbtns.com/github-btn.html?user=dolinay1&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                <iframe class="github-btn"src="https://ghbtns.com/github-btn.html?user=TLGeorge&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                <iframe class="github-btn"src="https://ghbtns.com/github-btn.html?user=ryansparker&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
             </div>
-        </div>
-      </footer>
+            </div>
     
-
+      </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/app.js"></script>

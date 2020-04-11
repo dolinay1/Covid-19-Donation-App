@@ -1,33 +1,49 @@
-/* 
-  .grid-x {
-    border: 1px solid black;
-  }
-
-  .large-2 {
-    border: 1px solid black;
-  }
-
-  .large-8 {
-    border: 1px solid black;
-  } */
-
   * {
     font-family: 'Montserrat', sans-serif;
   }
 
   h4 {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: rgb(243, 52, 116);
     font-weight: 600;
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
-    
+  }
+
+  h3 {
+    margin-top: 2rem;
+    color: rgb(243, 52, 116);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
   
 
   ul {
     box-shadow: 1px 1px 3px 4px #ccc;
+    border-radius: 3px;
   }
+
+  .callout-outer {
+    box-shadow: 1px 1px 3px 4px #ccc;
+    background-color: rgb(67, 68, 64);
+    margin-top: 4rem;
+    border-radius: 3px;
+  }
+
+  .callout-inner {
+    box-shadow: 1px 1px 1px 1px #ccc;
+  }
+
+  .callout-inner-card {
+    box-shadow: 1px 1px 1px 1px #ccc;
+  }
+
+  .callout-header {
+    text-align: center;
+  }
+  
 
   .header {
     height: 85vh;
@@ -79,7 +95,7 @@
 }
 
 .us-stats-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -93,7 +109,7 @@ thead {
 .us-stats {
   background-color: rgb(67, 68, 64);
   color: rgb(243, 52, 116);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -110,31 +126,63 @@ tbody {
   font-weight: 500;
 }
 
-/* Key color */
-.severe {
-  background-color: rgb(219, 26, 26)
+#search-description {
+  font-size: 1rem;
+  color: rgb(243, 52, 116);
+  font-weight: 900;
+  width: 250px;
 }
 
+.button {
+  background-color: rgb(243, 52, 116);
+  color: rgb(67, 68, 64);
+  border-radius: 10px;
+  font-weight: 800;
+  transition: all .2s; 
+} .button:hover {
+  background-color: rgb(206, 35, 92);}
+
+
+.expand-button {
+  background-color: rgb(243, 52, 116);
+  color: rgb(67, 68, 64);
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}   a:focus {
+  color: pink;
+}
+
+/* Key color */
+.severe {
+  background-color: rgb(170, 21, 21);
+ 
+} 
+
 .high {
-  background-color: rgb(219, 99, 30)
+  background-color: rgb(192, 86, 25)
 }
 
 .medium {
-  background-color: rgb(243, 224, 55)
+  background-color: rgb(190, 172, 65)
 }
 
 .low {
-  background-color: rgb(121, 173, 36)
+  background-color: rgb(83, 117, 28)
 }
 
 .very-low {
-  background-color: rgb(176, 224, 97)
+  background-color: rgb(135, 170, 78)
 }
 
 .accordion-title {
-  color: black;
-  font-size: 16px;
-}
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  transition: all .2s;
+} .accordion-title:hover {
+  color: #fff;
+  background-color: rgb(9, 163, 155);}
 
 
 li {
@@ -143,5 +191,11 @@ li {
 
 footer {
   margin-top: 10rem;
-  background-color: rgb(55, 56, 53);
+  background-color: rgb(67, 68, 64);
+}
+
+.github-btn {
+  margin-bottom: 3rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
