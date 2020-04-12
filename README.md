@@ -1,59 +1,48 @@
-# Project 1
-
-## Application Requirements
-
-* Must use at least two server-side APIs
-
-* Must use a CSS framework _other than_ Bootstrap
-
-* Must be interactive (i.e: accept and respond to user input)
-
-* Use at least one new third-party API
-
-* Must have a polished UI
-
-* Must meet good quality coding standards
-
-* Does not use alerts, confirms or prompts (look into _modals_)
-
-* Must be deployed to GitHub Pages
+## Covid-19 Donation App: Helping your local community in times of need! 
+Find local medical and health charities to aid in the fight against Covid-19!
 
 
-## Presentation Requirements
+# Concept: 
+Everyone is currently being affected by the coronavirus in one way or another, and Covid-19 Donation App provides a way for people to make a meaningful contribution. One of the early problem of the coronavirus outbreak was the lack of "essential" items. We thought about helping people find stores that had items in stock like toilet paper and hand sanitizer, but then we figured that that could easily be found via Google or Amazon. We then considered having facilities in need create a "wish list" and then people could pick which wish list/order they would like to  fulfill. We also considered using the covid data for a travel app where people could go to places. We finally decided on providing a list of charities that a donor can choose from. 
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
 
-* Elevator pitch: a one minute description of your application
+# Process: 
+We decided to use the Foundation framework. Tasks and roles were self-assigned, everyone picked their strong points, but we stayed on group sessions to discuss and issues that we encountered so we could tackle them together. 
 
-* Concept: What is your user story? What was your motivation for development?
+We encountered CORS errors which were remedied by https://cors-anywhere.herokuapp.com/
+From <https://app.slack.com/client/TT9V3PY6R/GUL9SK3FF/details/members> 
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+We also has issues with filtering the charity types that were returned from the API. We didn't want to include sports, arts and other unrelated charities, only health/medical organizations. We added variables for search keywords, but we also found documentation defining parameters that can be set to narrow down the results. 
 
-* Demo: Show your stuff!
+It was difficult to find quality covid-19 APIs since many are so new.
 
-* Directions for Future Development
+We wanted to include a map which displays the current cases and severity, but there weren’t any readily available. Johns Hopkins provided code for an embedded map which could be used as long as they were credited, but it would not display. It's possible that they have added some type of extra security.
 
+# Images
+* Tracker
+![](assets/clip1.gif)
+
+* Charity Search
+![](assets/clip2.gif)
+
+# Directions for Future Development
+* Color Code By Severity (Severe, High, Moderate, Low, Very-Low)
+* Sort by Alphabetical Order, Severity (Ascending & Descending)
 * Links to the deployed application and the GitHub repository
 
 
-## Grading Metrics 
-
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
+# URL
+https://github.com/dolinay1/Covid-19-Donation-App
 
 
-## Submission on BCS
+# GitHub Repository
+ https://dolinay1.github.io/Covid-19-Donation-App/
 
-You are required to submit the following:
 
-* The URL of the deployed application
+ © 2020 Julian Dolinay, Taneisha George, Ryan Parker All Rights Reserved.
 
-* The URL of the GitHub repository
+
+
 
 
 
